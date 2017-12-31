@@ -414,10 +414,10 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, dec
 #            bias += delta_b
             sorted_matrix_Wih += np.array(delta_wbar_ih) / len(X_train_next)
         
-        if t % 2 == 0:
-            print "Epoch thu: {0}".format(t)
-            print "MASE loss = {0}".format(loss1/len(train_X))
-            print "RMSE loss = {0}".format(loss2/len(train_X))
+#        if t % 2 == 0:
+#            print "Epoch thu: {0}".format(t)
+#            print "MASE loss = {0}".format(loss1/len(train_X))
+#            print "RMSE loss = {0}".format(loss2/len(train_X))
         list_loss_AMSE.append(loss1/len(train_X))
         list_loss_RMSE.append(loss2/len(train_X))
     ## Ending backpropagation

@@ -4,19 +4,16 @@
 Created on Thu Dec 28 20:02:25 2017
 
 @author: thieunv
-"""
-
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 28 19:18:42 2017
-
-@author: thieunv
 
 Hien tai mang nay la tot nhat. Nhan xet:
     - Da~ loai bo bias, va update weight input and hidden in backpropagation process
     - chi lam duoc vs du lieu nho (200 - 500)
     - Cac tham so anh huong rat lon
+    kmean - mutation - update
+    kmean - mutation - no update
+    kmean - no mutation - update
+    kmean - no mutation - no update
+
 """
 
 from random import uniform, randint
