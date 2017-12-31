@@ -1,13 +1,19 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Dec 28 01:35:27 2017
+Created on Sun Dec 31 16:46:53 2017
 
 @author: thieunv
 
 Hien tai mang nay la tot nhat. Nhan xet:
-    - Da~ loai bo bias
+    - Da~ loai bo bias, va update weight input and hidden in backpropagation process
+    - chi lam duoc vs du lieu nho (200 - 500)
     - Cac tham so anh huong rat lon
+    kmean - mutation - update
+    kmean - mutation - no update
+    kmean - no mutation - update
+    kmean - no mutation - no update
+
 """
 
 from random import uniform, randint
@@ -20,6 +26,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from pandas import read_csv
 from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.cluster import KMeans
+
 ### Helper functions
 def sigmoid_activation(x):
     return 1.0 / (1.0 + exp(-x))
@@ -89,49 +97,50 @@ def get_mutate_vector_weight(wHa, wHb, mutation_id = 1):
 
 def my_sorted(list_elem, key_function, key_id):
     if key_id == 1:     # Sort the matrix 2-D
-        kk = list_elem.transpose()
-        temp = sorted(kk, key=key_function)
+        temp = sorted(list_elem, key=key_function)
         return np.transpose(np.array(temp))
     if key_id == 2:     # Sort the matrix 2-D inside the list
         return sorted(list_elem, key=key_function)
-    
-    
+
+
+
 ## Load data frame
-full_path_name="/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/data/"
-full_path= "/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/SONIA/testing/mutation/update/no_pruning/result/cpu/"
+#full_path_name="/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/data/"
+#full_path= "/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/SONIA/testing/mutation/result/cpu/"
 file_name = "Fuzzy_data_sampling_617685_metric_10min_datetime_origin.csv"
 
-#full_path_name = "/home/thieunv/university/LabThayMinh/code/6_google_trace/data/"
-#full_path = "/home/thieunv/university/LabThayMinh/code/6_google_trace/SONIA/results/notDecompose/data10minutes/univariate/cpu/"
-
+full_path_name = "/home/thieunv/university/LabThayMinh/code/6_google_trace/data/"
+full_path = "/home/thieunv/university/LabThayMinh/code/6_google_trace/SONIA/results/notDecompose/data10minutes/univariate/cpu/"
 df = read_csv(full_path_name+ file_name, header=None, index_col=False, usecols=[0], engine='python')   
 dataset_original = df.values
 
 
-distance_levels = [0.1, 0.2, 0.5]
-threshold_number = 150   # 50 example                #[2, 3, 4]
+distance_levels = [0.1] #[0.1, 0.25, 0.5]
+threshold_number = 100   # 50 example                #[2, 3, 4]
 
-stimulation_level = [0.10, 0.12, 0.15, 0.20]  # [0.20]    
-positive_numbers = [0.01, 0.03, 0.05, 0.10]     # [0.1]   
+stimulation_level = [0.1]# [0.10, 0.2, 0.25, 0.50, 1.0, 1.5, 2.0]  # [0.20]    
+positive_numbers = [0.01] #[0.005, 0.01, 0.025, 0.05, 0.1, 0.15, 0.20]     # [0.1]   
 
-learning_rates = [0.01, 0.03, 0.05, 0.10, 0.12, 0.15, 0.20]   # [0.2]    
-sliding_windows = [1, 2, 3, 5]           # [3]  
+learning_rates = [0.30] #[0.005, 0.01, 0.025, 0.05, 0.10, 0.12, 0.15]   # [0.2]    
+sliding_windows = [3] #[1, 2, 3, 5]           # [3]  
      
-epochs = [200, 500, 750, 1000, 1250, 1500]   # [500]                       
-batch_sizes = [8, 16, 32, 64, 128]      # [16]     
+epochs = [500] #[100, 250, 500, 1000, 1500, 2000]   # [500]                       
+batch_sizes = [64] #[8, 16, 32, 64, 128]      # [16]     
 
-#length = dataset_original.shape[0]
+length = dataset_original.shape[0]
 num_features = dataset_original.shape[1]
 
+train_size = 700       #2880                   
+test_size = length - train_size
 valid = 0.25        # Hien tai chua dung den tham so nay
 epsilon = 0.00001   # Hien tai chua dung den tham so nay
 
-constant_error = 0.0001
+list_num = [(3200, 4000)]
+#list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
+#            (1500, 2000), (1500, 2500), (1500, 3000), (1500, 2000), (1500, 2500), (1500, 3000),
+#            (2000, 2500), (2000, 3000), (2000, 3500), (2500, 3000), (2500, 3500), (2500, 4000)
+#]
 
-list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
-            (1500, 2000), (1500, 2500), (1500, 3000), (1500, 2000), (1500, 2500), (1500, 3000),
-            (2000, 2500), (2000, 3000), (2000, 3500), (2500, 3000), (2500, 3500), (2500, 4000)
-]
                              
 #### My model here
 def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, learning_rate = 0.01, 
@@ -150,91 +159,15 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
     
     
     ### Qua trinh train va dong thoi tao cac hidden unit (Pha 1 - cluster data)
-    # 2. Khoi tao hidden thu 1
-    hu1 = [0, get_random_input_vector(train_X)]   # hidden unit 1 (t1, wH)
-    list_hu = [copy.deepcopy(hu1)]         # list hidden units
-    matrix_Wih = copy.deepcopy(hu1[1]).reshape(hu1[1].shape[0], 1)     # Mang 2 chieu 
     
-    ### +++ Technical use to trace back matrix weight
-    trace_back_list_matrix_Wih = [copy.deepcopy(matrix_Wih)]
-    trace_back_list_hu = [copy.deepcopy(list_hu)]
+    kmeans = KMeans(n_clusters=150, random_state=0).fit(train_X)
+    labelX = kmeans.predict(train_X).tolist()
+    matrix_Wih = kmeans.cluster_centers_
     
-    
-#    training_detail_file_name = full_path + 'SL=' + str(stimulation_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_CreateHU.txt'
-    
-    m = 0
-    while m < len(train_X):
-        
-        list_dist_mj = []      # Danh sach cac dist(mj)
-         # number of hidden units
-        for j in range(0, len(list_hu)):                # j: la chi so cua hidden thu j
-            dist_sum = 0.0
-            for i in range(0, len(train_X[0])):        # i: la chi so cua input unit thu i
-                dist_sum += pow(train_X[m][i] - matrix_Wih[i][j], 2.0)
-            list_dist_mj.append([j, sqrt(dist_sum)])
-            
-        list_dist_mj = sorted(list_dist_mj, key=itemgetter(1))        # Sap xep tu be den lon
-        
-        c = list_dist_mj[0][0]      # c: Chi so (index) cua hidden unit thu c ma dat khoang cach min
-        distmc = list_dist_mj[0][1] # distmc: Gia tri khoang cach nho nhat
-        
-        if distmc < stimulation_level:
-            list_hu[c][0] += 1                  # update hidden unit cth
-            
-            # Just update vector W(c)
-            list_hu[c][1] += positive_number * distmc
-            matrix_Wih = np.transpose(matrix_Wih)    # Phai o dang numpy thi ms update toan bo duoc
-            matrix_Wih[c] += positive_number * distmc
-            matrix_Wih = np.transpose(matrix_Wih)
-            
-            ## +++ Save the matrix_wih 
-            trace_back_list_matrix_Wih.append(copy.deepcopy(matrix_Wih))
-            trace_back_list_hu.append(copy.deepcopy(list_hu))
-            
-            # Tiep tuc vs cac example khac
-            m += 1
-            
-#            if m % 1000 == 0:
-##                with open(training_detail_file_name, 'a') as f:
-##                    print >> f, 'distmc = :', distmc  
-##                    print >> f, 'Example thu :', m  
-#                print "distmc = {0}".format(distmc)
-#                print "m = {0}".format(m)
-        else:
-            
-            ## +++ Get the first matrix weight hasn't been customize
-            matrix_Wih = copy.deepcopy(trace_back_list_matrix_Wih[0])
-            list_hu = copy.deepcopy(trace_back_list_hu[0])
-            ## +++ Del all trace back matrix weight except the first one
-            del trace_back_list_matrix_Wih[1:]
-            del trace_back_list_hu[1:]
-            
-#            with open(training_detail_file_name, 'a') as f:
-#                print >> f, 'Failed !!!. distmc = ', distmc  
-#            print "Failed !!!. distmc = {0}".format(distmc)
-                
-            list_hu.append([0, copy.deepcopy(train_X[m]) ])
-            
-#            with open(training_detail_file_name, 'a') as f:
-#                print >> f, 'Hidden unit thu:', len(list_hu), ' duoc tao ra.'
-#            print "Hidden unit thu: {0} duoc tao ra.".format(len(list_hu))
-            matrix_Wih = np.append(matrix_Wih, copy.deepcopy(train_X[m]).reshape((matrix_Wih.shape[0], 1)), axis = 1)
-            for hu in list_hu:
-                hu[0] = 0
-            # then go to step 1
-            m = 0
-            
-            
-            ### +++
-            trace_back_list_matrix_Wih[0] = copy.deepcopy(matrix_Wih)
-            trace_back_list_hu[0] = copy.deepcopy(list_hu)    
-            
-    ### +++ Get the last matrix weight 
-    matrix_Wih = copy.deepcopy(trace_back_list_matrix_Wih[-1])
-    list_hu = copy.deepcopy(trace_back_list_hu[-1])
-    ### +++ Delete trace back
-    del trace_back_list_matrix_Wih
-    del trace_back_list_hu
+    list_hu = []
+    for i in range(len(matrix_Wih)):
+        temp = labelX.count(i)
+        list_hu.append([temp, matrix_Wih[i]])
             
     
     ### Qua trinh mutated hidden unit (Pha 2- Adding artificial local data)
@@ -243,8 +176,9 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
     t2 = np.ones(num_features * sliding)
     list_hu.append([0, t1])
     list_hu.append([0, t2])
-    matrix_Wih = np.append(matrix_Wih, t1.reshape(t1.shape[0], 1), axis=1)
-    matrix_Wih = np.append(matrix_Wih, t2.reshape(t2.shape[0], 1), axis=1)
+    
+    matrix_Wih = np.concatenate((matrix_Wih, np.array([t1])), axis=0)
+    matrix_Wih = np.concatenate((matrix_Wih, np.array([t2])), axis=0)
 
 #    # Sort matrix weights input and hidden, Sort list hidden unit by list weights
     sorted_matrix_Wih = my_sorted(matrix_Wih, key_function=square, key_id=1)
@@ -268,20 +202,17 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
             temp_node = get_mutate_vector_weight(wHa, wHb, mutation_id=1)
             sorted_list_hu.insert(i+1, [0, temp_node])
             sorted_matrix_Wih = np.insert(sorted_matrix_Wih, [i+1], temp_node.reshape(temp_node.shape[0], 1), axis=1)
-#            print "New hidden unit created. {0}".format(len(sorted_list_hu))
-                    
+            print "New hidden unit created. {0}".format(len(sorted_list_hu))
+                   
     # Ending phrase 2
     
     ### Building set of weights between hidden layer and output layer
     ## Initialize weights and bias
     
-    # Avoid 1.0 / 0 when update weights between input and hidden
-    for i in range(len(sorted_matrix_Wih[0])):
-        if sorted_list_hu[i][0] == 1:
-            sorted_list_hu[i][1] += constant_error
-            sorted_matrix_Wih[i] += constant_error
-            
-    matrix_Who = np.zeros(len(sorted_list_hu))
+    sorted_list_hu = copy.deepcopy(sorted_list_hu)
+    sorted_matrix_Wih = copy.deepcopy(matrix_Wih)
+    
+    matrix_Who = np.zeros(len(sorted_matrix_Wih))
     bias = 1
 #    print "Random bias is: {0}".format(bias)
 
@@ -306,15 +237,14 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
             ## Calculate all delta weight in 1 batch 
             delta_ws = []
 #            delta_bias = []
-            delta_weights_ih = []
             for k in range(0, len(X_train_next)):        # training with 1 example at a time
                 
                 # Calculate output of hidden layer to put it in input of output layer
                 output_hidden_layer = []     
-                for i in range(0, len(np.transpose(sorted_matrix_Wih))):
+                for i in range(0, len(sorted_matrix_Wih)):
                     xHj_sum = 0.0
                     for j in range(0, len(X_train_next[0])):
-                        xHj_sum += pow(sorted_matrix_Wih[j][i] - X_train_next[k][j], 2.0)
+                        xHj_sum += pow(sorted_matrix_Wih[i][j] - X_train_next[k][j], 2.0)
                     output_hidden_layer.append(hyperbolic_tangent_sigmoid_activation(sqrt(xHj_sum)))
                     
                 # Right now we have: output hidden, weights hidden and output, bias
@@ -332,71 +262,21 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
                 ##  update weights and bias hidden and output
                 delta_weights_ho = -2 * learning_rate * y_output * (1 - y_output) * (y_output - y_train_next[k]) * np.array(output_hidden_layer) 
 #                delta_bias_temp = -2 * learning_rate * y_output * (1 - y_output) * (y_output - train_y[k]) 
-                
                 delta_ws.append(delta_weights_ho)
 #                delta_bias.append(delta_bias_temp)
                 
-                
-                
-                
-                 ##2. update weights input and hidden
-            
-                distance_out_hl = []        # Tinh khoang cach tu 1 hidden unit den example
-                list_xHj = []
-                for i in range(0, len(np.transpose(sorted_matrix_Wih))):
-                    xHj_sum = 0.0
-                    for j in range(0, len(train_X[0])):
-                        xHj_sum += pow(sorted_matrix_Wih[j][i] - train_X[k][j], 2.0)
-                    distance_out_hl.append(1.0 / sqrt(xHj_sum))
-                    list_xHj.append(1 - hyperbolic_tangent_sigmoid_activation(sqrt(xHj_sum)))
-                    
-                # a. Calculate matrix input Xi
-                
-                temp = []           # Vd: [x1, x2]
-                for j in range(0, len(train_X[0])):
-                    temp.append(train_X[k][j])
-                matrix_input_Xi = np.array(temp)
-                
-                # VD: (w11 w12 w13; w21 w22 w23) --> (w11 w21; w12 w22; w13 w23) - (x1 x2) = (w11-x1 w21-x2; w12-x1 w22-x2; w13-x1 w23-x2)
-                matrix_input_Xi = (sorted_matrix_Wih.transpose() - matrix_input_Xi).transpose()
-                
-                distance_out_hl = np.array([distance_out_hl])   # make it to matrix 2D
-                list_xHj = np.array([list_xHj])
-                part_three_1 = distance_out_hl
-                part_three_2 = list_xHj
-                for j in range(0, len(train_X[0])-1):
-                    part_three_1 = np.concatenate((part_three_1, distance_out_hl), axis = 0)
-                    part_three_2 = np.concatenate((part_three_2, list_xHj), axis = 0)
-               
-                # Dot product two matrix
-                part_three = part_three_1 * matrix_input_Xi * part_three_2
-                
-                # Calculate part_two
-                part_two_temp = np.array([matrix_Who * y_output * (1- y_output)])   # Make 2-D array
-                part_two = part_two_temp
-                # dulicate row to make it to make
-                for j in range(0, len(train_X[0])-1):
-                    part_two = np.concatenate((part_two, part_two_temp), axis = 0)
-                
-                delta_weights_ih_temp = -2*(train_y[k] - y_output)* part_two * part_three
-                delta_weights_ih.append(delta_weights_ih_temp)
-                
+
                 
             ## Sum all delta weight to get mean delta weight
             delta_wbar = np.array(np.sum(delta_ws, axis = 0) / len(X_train_next))
 #            delta_b = np.array(np.sum(delta_bias, axis = 0) / len(X_train_next))
-            delta_wbar_ih = np.zeros( (delta_weights_ih[0].shape[0], delta_weights_ih[0].shape[1]) )
-            for dw in delta_weights_ih:
-                delta_wbar_ih += dw
-            
             matrix_Who += delta_wbar
 #            bias += delta_b
-            sorted_matrix_Wih += np.array(delta_wbar_ih) / len(X_train_next)
         
-#        if t % 2 == 0:
-#            print "Epoch thu: {0}".format(t)
-#            print "MASE loss = {0}".format(loss1/len(train_X))
-#            print "RMSE loss = {0}".format(loss2/len(train_X))
+        if t % 20 == 0:
+            print "Epoch thu: {0}".format(t)
+            print "MASE loss = {0}".format(loss1/len(train_X))
+            print "RMSE loss = {0}".format(loss2/len(train_X))
         list_loss_AMSE.append(loss1/len(train_X))
         list_loss_RMSE.append(loss2/len(train_X))
     ## Ending backpropagation
@@ -406,10 +286,10 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
     predict = []
     for k in range(len(test_X)):
         pre_output_hl = []
-        for i in range(0, len(np.transpose(sorted_matrix_Wih))):
+        for i in range(0, len(sorted_matrix_Wih)):
             xHj_sum = 0.0
             for j in range(0, len(test_X[0])):
-                xHj_sum += pow(sorted_matrix_Wih[j][i] - test_X[k][j], 2.0)
+                xHj_sum += pow(sorted_matrix_Wih[i][j] - test_X[k][j], 2.0)
             pre_output_hl.append(hyperbolic_tangent_sigmoid_activation(sqrt(xHj_sum)))
         
         pre_y_output = 0 #bias
@@ -420,10 +300,9 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
      
     return (sorted_matrix_Wih, matrix_Who , bias, np.array(predict), list_loss_AMSE, list_loss_RMSE)
 
+
 pl1 = 1         # Use to draw figure
-pl2 = 1000000
-### Loop to test effect of difference stimulation level 
-count_num_loop = 0
+pl2 = 1000
 
 for u_num in list_num:
     
@@ -472,30 +351,30 @@ for u_num in list_num:
                         for positive_number in positive_numbers:
                             
                             for distance_level in distance_levels:
-                                
+                                    
                                 matrix_Wih, vector_Who, bias, predict, list_loss_AMSE, list_loss_RMSE = mySONIA(trainX, trainY, testX, epoch=epoch, 
                                             batch_size=batch_size, validation=valid, sliding=sliding, learning_rate=learning_rate, 
                                             positive_number=positive_number, stimulation_level=sti_level, distance_level=distance_level, threshold_number=threshold_number)
                                 
                                 
-    #                            print "bias: {0}".format(bias)
-    #                            print "Weight input and hidden: "
-    #                            print matrix_Wih
-    #                            print "Weight hidden and output: "
-    #                            print vector_Who
-    #                            print "Predict " 
-    #                            print predict
+                                print "bias: {0}".format(bias)
+                                print "Weight input and hidden: "
+                                print matrix_Wih
+                                print "Weight hidden and output: "
+                                print vector_Who
+                                print "Predict " 
+                                print predict
                             
                                 # invert predictions        
                                 testPredictInverse = my_invert_min_max_scaler(predict, min_GT, max_GT)
-    #                            print testPredictInverse
-    #                            print 'len(testY): {0}, len(testPredict): {1}'.format(len(testY[0]), len(testPredictInverse))
+                                print testPredictInverse
+                                print 'len(testY): {0}, len(testPredict): {1}'.format(len(testY[0]), len(testPredictInverse))
                                 
                                 # calculate root mean squared error
                                 testScoreRMSE = sqrt(mean_squared_error(testY, testPredictInverse))
                                 testScoreMAE = mean_absolute_error(testY, testPredictInverse)
-    #                            print('Test Score: %f RMSE' % (testScoreRMSE))
-    #                            print('Test Score: %f MAE' % (testScoreMAE))
+                                print('Test Score: %f RMSE' % (testScoreRMSE))
+                                print('Test Score: %f MAE' % (testScoreMAE))
                                 
         #                        detail_network_file_name = full_path + 'SL=' + str(sti_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_NetworkDetail.txt'
         #                        with open(detail_network_file_name, 'a') as f:
@@ -506,31 +385,25 @@ for u_num in list_num:
         #                            print >> f, 'len(testY): {0}, len(testPredict): {1}'.format(len(testY[0]), len(testPredictInverse))
                                 
                                 # summarize history for point prediction
-                                if testScoreMAE < 0.5:
-                                    plt.figure(pl1)
-                                    plt.plot(testY)
-                                    plt.plot(testPredictInverse)
-                                    plt.title('model predict')
-                                    plt.ylabel('real value')
-                                    plt.xlabel('point')
-                                    plt.legend(['realY... Test Score MAE= ' + str(testScoreMAE), 'predictY... Test Score RMSE= ' + str(testScoreRMSE) ], loc='upper right')
-                                    pic1_file_name = full_path + 'Train=' + str(u_num[0]) + '_Test=' + str(u_num[1]) + '_SL=' + str(sti_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_DL='+ str(distance_level) + '_PointPredict.png'
-                                    plt.savefig(pic1_file_name)
-                                    plt.close()
-                                    pl1 += 1
-                            
-                                    plt.figure(pl2)
-                                    plt.plot(list_loss_AMSE)
-                                    plt.plot(list_loss_RMSE)
-                                    plt.ylabel('Real training loss')
-                                    plt.xlabel('Epoch:')
-                                    plt.legend(['Test Score MAE= ' + str(testScoreMAE) , 'Test Score RMSE= ' + str(testScoreRMSE) ], loc='upper right')
-                                    pic2_file_name = full_path + 'Train=' + str(u_num[0]) + '_Test=' + str(u_num[1]) + '_SL=' + str(sti_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_DL='+ str(distance_level) + '_TrainingLoss.png'
-                                    plt.savefig(pic2_file_name)
-                                    plt.close()
-                                    pl2 += 1
-                                
-                                count_num_loop += 1
-                                if count_num_loop % 5000 == 0:
-                                    print "Vong lap thu: {0}".format(count_num_loop)
-print "Processing DONE!!!"
+                                plt.figure(pl1)
+                                plt.plot(testY)
+                                plt.plot(testPredictInverse)
+                                plt.title('model predict')
+                                plt.ylabel('real value')
+                                plt.xlabel('point')
+                                plt.legend(['realY', 'predictY'], loc='upper left')
+        #                        pic1_file_name = full_path + 'SL=' + str(sti_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_PointPredict.png'
+        #                        plt.savefig(pic1_file_name)
+#                                plt.close()
+                                pl1 += 1
+                        
+                                plt.figure(pl2)
+                                plt.plot(list_loss_AMSE)
+                                plt.plot(list_loss_RMSE)
+                                plt.ylabel('Real training loss')
+                                plt.xlabel('Epoch:')
+                                plt.legend(['Test Score MAE= ' + str(testScoreMAE) , 'Test Score RMSE= ' + str(testScoreRMSE) ], loc='upper left')
+        #                        pic2_file_name = full_path + 'SL=' + str(sti_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_TrainingLoss.png'
+        #                        plt.savefig(pic2_file_name)
+#                                plt.close()
+                                pl2 += 1

@@ -139,6 +139,8 @@ test_size = length - train_size
 valid = 0.25        # Hien tai chua dung den tham so nay
 epsilon = 0.00001   # Hien tai chua dung den tham so nay
 
+constant_error = 0.0001
+
 list_percent_decreases = [0.10, 0.13, 0.15, 0.20, 0.25]
 
 list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
@@ -291,6 +293,13 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, dec
 #    sorted_list_hu = copy.deepcopy(sorted_list_hu)
 #    sorted_matrix_Wih = copy.deepcopy(sorted_matrix_Wih)
 #    
+    
+    # Avoid 1.0 / 0 when update weights between input and hidden
+    for i in range(len(sorted_matrix_Wih[0])):
+        if sorted_list_hu[i][0] == 1:
+            sorted_list_hu[i][1] += constant_error
+            sorted_matrix_Wih[i] += constant_error
+    
     sorted_list_hu, sorted_matrix_Wih = decrease_list_hidden_unit(sorted_list_hu, sorted_matrix_Wih, percent=decrease)
     
     matrix_Who = np.zeros(len(sorted_list_hu))
@@ -405,10 +414,10 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, dec
 #            bias += delta_b
             sorted_matrix_Wih += np.array(delta_wbar_ih) / len(X_train_next)
         
-#        if t % 2 == 0:
-#            print "Epoch thu: {0}".format(t)
-#            print "MASE loss = {0}".format(loss1/len(train_X))
-#            print "RMSE loss = {0}".format(loss2/len(train_X))
+        if t % 2 == 0:
+            print "Epoch thu: {0}".format(t)
+            print "MASE loss = {0}".format(loss1/len(train_X))
+            print "RMSE loss = {0}".format(loss2/len(train_X))
         list_loss_AMSE.append(loss1/len(train_X))
         list_loss_RMSE.append(loss2/len(train_X))
     ## Ending backpropagation

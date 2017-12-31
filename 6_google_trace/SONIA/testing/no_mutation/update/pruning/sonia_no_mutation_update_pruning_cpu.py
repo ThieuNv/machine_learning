@@ -141,6 +141,8 @@ epsilon = 0.00001   # Hien tai chua dung den tham so nay
 
 list_percent_decreases = [0.10, 0.13, 0.15, 0.20, 0.25]
 
+constant_error = 0.0001
+
 list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
             (1500, 2000), (1500, 2500), (1500, 3000), (1500, 2000), (1500, 2500), (1500, 3000),
             (2000, 2500), (2000, 3000), (2000, 3500), (2500, 3000), (2500, 3500), (2500, 4000)
@@ -291,6 +293,12 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, dec
 #    sorted_list_hu = copy.deepcopy(sorted_list_hu)
 #    sorted_matrix_Wih = copy.deepcopy(sorted_matrix_Wih)
 #    
+     # Avoid 1.0 / 0 when update weights between input and hidden
+    for i in range(len(matrix_Wih[0])):
+        if list_hu[i][0] == 1:
+            list_hu[i][1] += constant_error
+            matrix_Wih[i] += constant_error
+            
     sorted_list_hu, sorted_matrix_Wih = decrease_list_hidden_unit(list_hu, matrix_Wih, percent=decrease)
     
     matrix_Who = np.zeros(len(sorted_list_hu))
