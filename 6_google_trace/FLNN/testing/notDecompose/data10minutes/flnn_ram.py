@@ -159,7 +159,7 @@ def myFLNN(trainX, trainY, testX, epoch, batch_size, validation, activation, wei
         ybar = activation_func(ybar)
         predict.append(ybar)
      
-    return (w, np.reshape(predict, (len(predict), 1)), valid_list_loss, train_list_loss, training_detail_file_name)
+    return (w, np.reshape(predict, (len(predict), 1)), valid_list_loss, train_list_loss)
 
 
 pl1 = 1
@@ -223,7 +223,7 @@ for func_index in list_function_expand:       # 5 way to expand
                             #transformTestY = data[train_size:length-sliding, 0:1]
                             
                                 
-                            w, predict, valid_list_loss, train_list_loss, training_detail_file_name = myFLNN(trainX, trainY, testX, epoch=epoch, batch_size = batch_size, 
+                            w, predict, valid_list_loss, train_list_loss = myFLNN(trainX, trainY, testX, epoch=epoch, batch_size = batch_size, 
                                                 validation=valid, activation=activation_func, weight_size=weight_size, epsilon=epsilon, eta=learning_rate)
                             
                             # invert predictions        
