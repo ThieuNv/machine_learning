@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan  1 10:18:35 2018
+Created on Mon Jan  1 10:53:32 2018
 
 @author: thieunv
 
@@ -166,7 +166,7 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
         temp = labelX.count(i)
         list_hu.append([temp, matrix_Wih[i]])
             
-#    threshold_number = int (len(train_X) / cluster_number)
+    threshold_number = int (len(train_X) / cluster_number)
     
     ### Qua trinh mutated hidden unit (Pha 2- Adding artificial local data)
     # Adding 2 hidden unit in begining and ending points of input space
@@ -246,10 +246,10 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
                 
                 # Calculate output of hidden layer to put it in input of output layer
                 output_hidden_layer = []     
-                for i in range(0, len(np.transpose(matrix_Wih))):
+                for i in range(0, len(matrix_Wih)):
                     xHj_sum = 0.0
                     for j in range(0, len(X_train_next[0])):
-                        xHj_sum += pow(matrix_Wih[j][i] - X_train_next[k][j], 2.0)
+                        xHj_sum += pow(matrix_Wih[i][j] - X_train_next[k][j], 2.0)
                     output_hidden_layer.append(hyperbolic_tangent_sigmoid_activation(sqrt(xHj_sum)))
                     
                 # Right now we have: output hidden, weights hidden and output, bias
@@ -278,10 +278,10 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
             
                 distance_out_hl = []        # Tinh khoang cach tu 1 hidden unit den example
                 list_xHj = []
-                for i in range(0, len(np.transpose(matrix_Wih))):
+                for i in range(0, len(matrix_Wih)):
                     xHj_sum = 0.0
                     for j in range(0, len(train_X[0])):
-                        xHj_sum += pow(matrix_Wih[j][i] - train_X[k][j], 2.0)
+                        xHj_sum += pow(matrix_Wih[i][j] - train_X[k][j], 2.0)
                     distance_out_hl.append(1.0 / sqrt(xHj_sum))
                     list_xHj.append(1 - hyperbolic_tangent_sigmoid_activation(sqrt(xHj_sum)))
                     
@@ -293,12 +293,12 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
                 matrix_input_Xi = np.array(temp)
                 
                 # VD: (w11 w12 w13; w21 w22 w23) --> (w11 w21; w12 w22; w13 w23) - (x1 x2) = (w11-x1 w21-x2; w12-x1 w22-x2; w13-x1 w23-x2)
-                matrix_input_Xi = (matrix_Wih.transpose() - matrix_input_Xi).transpose()
+                matrix_input_Xi = (matrix_Wih - matrix_input_Xi).transpose()
                 
                 distance_out_hl = np.array([distance_out_hl])   # make it to matrix 2D
                 list_xHj = np.array([list_xHj])
-                part_three_1 = distance_out_hl
-                part_three_2 = list_xHj
+                part_three_1 = copy.deepcopy(distance_out_hl)
+                part_three_2 = copy.deepcopy(list_xHj)
                 for j in range(0, len(train_X[0])-1):
                     part_three_1 = np.concatenate((part_three_1, distance_out_hl), axis = 0)
                     part_three_2 = np.concatenate((part_three_2, list_xHj), axis = 0)
@@ -308,7 +308,7 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
                 
                 # Calculate part_two
                 part_two_temp = np.array([matrix_Who * y_output * (1- y_output)])   # Make 2-D array
-                part_two = part_two_temp
+                part_two = copy.deepcopy(part_two_temp)
                 # dulicate row to make it to make
                 for j in range(0, len(train_X[0])-1):
                     part_two = np.concatenate((part_two, part_two_temp), axis = 0)
@@ -326,7 +326,7 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
             
             matrix_Who += delta_wbar
 #            bias += delta_b
-            matrix_Wih += np.array(delta_wbar_ih) / len(X_train_next)
+            matrix_Wih += np.transpose(np.array(delta_wbar_ih)) / len(X_train_next)
         
 #        if t % 2 == 0:
 #            print "Epoch thu: {0}".format(t)
