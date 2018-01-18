@@ -479,7 +479,7 @@ for u_num in list_num:
         #                            print >> f, 'len(testY): {0}, len(testPredict): {1}'.format(len(testY[0]), len(testPredictInverse))
                                 
                                 # summarize history for point prediction
-                                if testScoreMAE < 0.05:
+                                if testScoreMAE < 0.04:
                                     plt.figure(pl1)
                                     plt.plot(testY)
                                     plt.plot(testPredictInverse)

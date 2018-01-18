@@ -1,7 +1,15 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec 27 23:39:48 2017
+Created on Thu Jan 18 14:38:34 2018
+
+@author: thieunv
+"""
+
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jan 18 13:59:04 2018
 
 @author: thieunv
 
@@ -28,8 +36,6 @@ def sigmoid_activation(x):
 def relu(x):
     return max(0, x)
 
-def self_activation(x):
-    return x
 def hyperbolic_tangent_sigmoid_activation(x):   # -1 <= output <= 1
     return (2.0 / (1.0 + exp(-2.0*x)) - 1.0 )
 
@@ -61,12 +67,12 @@ def get_batch_data_next(trainX, trainY, index, batch_size):
         return (trainX[real_index: (real_index+batch_size)], trainY[real_index: (real_index+batch_size)])
 
 ## Load data frame
-full_path_name="/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/data/"
-full_path= "/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/SONIA/testing/no_mutation/no_update/no_pruning/result/cpu/"
+#full_path_name="/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/data/"
+#full_path= "/mnt/volume/ggcluster/spark-2.1.1-bin-hadoop2.7/thieunv/machine_learning/6_google_trace/SONIA/testing/no_mutation/no_update/no_pruning/result/cpu/"
 file_name = "Fuzzy_data_sampling_617685_metric_10min_datetime_origin.csv"
 
-#full_path_name = "/home/thieunv/university/LabThayMinh/code/6_google_trace/data/"
-#full_path = "/home/thieunv/university/LabThayMinh/code/6_google_trace/SONIA/results/notDecompose/data10minutes/univariate/cpu/"
+full_path_name = "/home/thieunv/university/LabThayMinh/code/6_google_trace/data/"
+full_path = "/home/thieunv/university/LabThayMinh/code/6_google_trace/SONIA/testing/ga/no_update/result/cpu/"
 df = read_csv(full_path_name+ file_name, header=None, index_col=False, usecols=[0], engine='python')   
 dataset_original = df.values
 
@@ -74,11 +80,11 @@ dataset_original = df.values
 distance_level = 0.1  #[0.1, 0.15, 0.2]
 threshold_number = 2 #[2, 3, 4]
 
-stimulation_level = [0.10, 0.2, 0.25, 0.50, 1.0, 1.5, 2.0]  # [0.20]    
+stimulation_level = [0.2]  # [0.10, 0.2, 0.25, 0.50, 1.0, 1.5, 2.0]  # [0.20]    
 positive_numbers = [0.005, 0.01, 0.025, 0.05, 0.1, 0.15, 0.20]     # [0.1]   
 
 learning_rates = [0.005, 0.01, 0.025, 0.05, 0.10, 0.12, 0.15]   # [0.2]    
-sliding_windows = [1, 2, 3, 5]           # [3]  
+sliding_windows = [2] #[1, 2, 3, 5]           # [3]  
      
 epochs = [100, 250, 500, 1000, 1500, 2000]   # [500]                       
 batch_sizes = [8, 16, 32, 64, 128]      # [16]     
@@ -91,28 +97,15 @@ test_size = length - train_size
 valid = 0.25        # Hien tai chua dung den tham so nay
 epsilon = 0.00001   # Hien tai chua dung den tham so nay
 
-list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
-            (1500, 2000), (1500, 2500), (1500, 3000), (1500, 2000), (1500, 2500), (1500, 3000),
-            (2000, 2500), (2000, 3000), (2000, 3500), (2500, 3000), (2500, 3500), (2500, 4000)
-]
-#### My model here
-def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, learning_rate = 0.01, 
-            positive_number = 0.1, stimulation_level=0.05, distance_level=0.1, threshold_number=2):
-    
-    #### Chu y:
-    # 1. Tat ca cac input trainX phai normalize ve doan [0, 1]
-    
-    ## 1. Split validation dataset
-    #valid_len = int(len(trainX)*validation)
-    #valid_X = trainX[(len(trainX) - valid_len):]
-    #valid_y = trainY[(len(trainX) - valid_len):]
-   
-    #valid_list_loss = [0.1]
-    #train_list_loss = [0.1]
-    
-    
-    ### Qua trinh train va dong thoi tao cac hidden unit (Pha 1 - cluster data)
-    # 2. Khoi tao hidden thu 1
+list_num = [(3000, 3500)]
+
+#list_num = [(500, 1000), (500, 1500), (500, 2000), (750, 1250), (750, 1750), (750, 2250),
+#            (1500, 2000), (1500, 2500), (1500, 3000), (1500, 2000), (1500, 2500), (1500, 3000),
+#            (2000, 2500), (2000, 3000), (2000, 3500), (2500, 3000), (2500, 3500), (2500, 4000)
+#]
+
+
+def build_hidden_layer(train_X):
     hu1 = [0, get_random_input_vector(train_X)]   # hidden unit 1 (t1, wH)
     list_hu = [copy.deepcopy(hu1)]         # list hidden units
     matrix_Wih = copy.deepcopy(hu1[1]).reshape(hu1[1].shape[0], 1)     # Mang 2 chieu 
@@ -120,8 +113,6 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
     ### +++ Technical use to trace back matrix weight
     trace_back_list_matrix_Wih = [copy.deepcopy(matrix_Wih)]
     trace_back_list_hu = [copy.deepcopy(list_hu)]
-    
-    
 #    training_detail_file_name = full_path + 'SL=' + str(stimulation_level) + '_Slid=' + str(sliding) + '_Epoch=' + str(epoch) + '_BS=' + str(batch_size) + '_LR=' + str(learning_rate) + '_PN=' + str(positive_number) + '_CreateHU.txt'
     
     m = 0
@@ -155,7 +146,6 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
             
             # Tiep tuc vs cac example khac
             m += 1
-            
 #            if m % 100 == 0:
 #                with open(training_detail_file_name, 'a') as f:
 #                    print >> f, 'distmc = :', distmc  
@@ -163,7 +153,6 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
 #                print "distmc = {0}".format(distmc)
 #                print "m = {0}".format(m)
         else:
-            
             ## +++ Get the first matrix weight hasn't been customize
             matrix_Wih = copy.deepcopy(trace_back_list_matrix_Wih[0])
             list_hu = copy.deepcopy(trace_back_list_hu[0])
@@ -185,8 +174,6 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
                 hu[0] = 0
             # then go to step 1
             m = 0
-            
-            
             ### +++
             trace_back_list_matrix_Wih[0] = copy.deepcopy(matrix_Wih)
             trace_back_list_hu[0] = copy.deepcopy(list_hu)    
@@ -197,54 +184,30 @@ def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, lea
     ### +++ Delete trace back
     del trace_back_list_matrix_Wih
     del trace_back_list_hu
-            
-    
-    ### Qua trinh mutated hidden unit (Pha 2- Adding artificial local data)
-    # Adding 2 hidden unit in begining and ending points of input space
-#    t1 = np.zeros(num_features * sliding)
-#    t2 = np.ones(num_features * sliding)
-#    list_hu.append([0, t1])
-#    list_hu.append([0, t2])
-#    matrix_Wih = np.append(matrix_Wih, t1.reshape(t1.shape[0], 1), axis=1)
-#    matrix_Wih = np.append(matrix_Wih, t2.reshape(t2.shape[0], 1), axis=1)
-#    
-#    # Sort matrix weights input and hidden
-#    sorted_matrix_Wih = []
-#    for i in range(0, len(train_X[0])):
-#        sorted_matrix_Wih.append(sorted(matrix_Wih[i]))
-#    sorted_matrix_Wih = np.array(sorted_matrix_Wih)
-#    
-#    # Sort list hidden unit by list weights
-#    sorted_list_hu = []
-#    for i in range(0, len(list_hu)):
-#        sorted_list_hu.append([list_hu[i][0], np.transpose(sorted_matrix_Wih)[i]])
-#        
-#    # Now working on both sorted matrix weights and sorted list hidden units     
-#    for i in range(0, len(list_hu)-1):
-#        ta, wHa = list_hu[i][0], list_hu[i][1]
-#        tb, wHb = list_hu[i+1][0], list_hu[i+1][1]
-#        
-#        dab_sum = 0.0
-#        for j in range(0, len(wHa)):
-#            dab_sum += pow(wHa[j] - wHb[j], 2.0)
-#        dab = sqrt(dab_sum)
-#        
-#        if dab > distance_level and ta < threshold_number and tb < threshold_number:
-#            # Create new mutated hidden unit
-#            t1 = get_random_vector_weight(wHa, wHb)
-#            sorted_list_hu.append([0, t1])
-#            sorted_matrix_Wih = np.append(sorted_matrix_Wih, t1.reshape(t1.shape[0], 1), axis=1)
-    # Ending phrase 2
-    
-    ### Building set of weights between hidden layer and output layer
-    ## Initialize weights and bias
-    
-    sorted_list_hu = copy.deepcopy(list_hu)
-    sorted_matrix_Wih = copy.deepcopy(matrix_Wih)
 
-#    matrix_Who = np.zeros(len(sorted_list_hu))
+    return matrix_Wih, list_hu
+
+#### My model here
+def mySONIA(train_X, train_y, test_X, epoch, batch_size, validation,sliding, learning_rate = 0.01, 
+            positive_number = 0.1, stimulation_level=0.05, distance_level=0.1, threshold_number=2):
     
+    #### Chu y:
+    # 1. Tat ca cac input trainX phai normalize ve doan [0, 1]
+    
+    ## 1. Split validation dataset
+    #valid_len = int(len(trainX)*validation)
+    #valid_X = trainX[(len(trainX) - valid_len):]
+    #valid_y = trainY[(len(trainX) - valid_len):]
+   
+    #valid_list_loss = [0.1]
+    #train_list_loss = [0.1]
+    
+    ### Build hidden layer (weight input and hidden)
+    sorted_matrix_Wih, sorted_list_hu = build_hidden_layer(train_X)
+    
+    ### Build output layer (weight hidden and output using GA)
     matrix_Who = np.zeros(len(sorted_list_hu))
+    
     bias = 1
 #    print "Random bias is: {0}".format(bias)
 
@@ -413,7 +376,7 @@ for u_num in list_num:
     #                            print >> f, 'len(testY): {0}, len(testPredict): {1}'.format(len(testY[0]), len(testPredictInverse))
                             
                             # summarize history for point prediction
-                            if testScoreMAE < 0.4:
+                            if testScoreMAE < 0.5:
                                 plt.figure(pl1)
                                 plt.plot(testY)
                                 plt.plot(testPredictInverse)
