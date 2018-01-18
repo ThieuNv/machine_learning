@@ -39,7 +39,7 @@ df = read_csv(full_path_name+ file_name, header=None, index_col=False, usecols=[
 dataset_original = df.values
 
 list_function_expand = [1, 2, 4, 8, 9]                             # (1)
-list_activation = [0, 1, 2]                                                 # (2) 0 dung, sigmoid, relu  
+list_activation = [1, 2]                                                 # (2) 0 dung, sigmoid, relu  
 sliding_windows = [1, 2, 3, 5]                                           # (3)
 
 length = len(dataset_original)
@@ -163,7 +163,7 @@ def myFLNN(trainX, trainY, testX, epoch, batch_size, validation, activation, wei
 
 
 pl1 = 1
-pl2 = 100000
+pl2 = 1000000
 couting_number_loop = 0
 ### Loop to test 5 way expand
 for func_index in list_function_expand:       # 5 way to expand 
@@ -238,7 +238,7 @@ for func_index in list_function_expand:       # 5 way to expand
 #                            print('Test Score: %f RMSE' % (testScoreRMSE))
 #                            print('Test Score: %f MAE' % (testScoreMAE))
                             
-                            if testScoreMAE < 0.5:
+                            if testScoreMAE < 0.35:
                                 # summarize history for point prediction
                                 plt.figure(pl1)
                                 plt.plot(testY)
