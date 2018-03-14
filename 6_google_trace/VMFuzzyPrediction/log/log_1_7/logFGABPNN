@@ -1,0 +1,46 @@
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Loading Data
+Fuzzy distance = 0.0305
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [16.92(30.84)/12.46(4.40)/14.10(14.10)]
+Gen. 10 (20.00%): Max/Min/Avg Fitness(Raw) [21.94(86.07)/17.57(5.01)/18.29(18.29)]
+Gen. 20 (40.00%): Max/Min/Avg Fitness(Raw) [45.60(101.36)/34.12(5.65)/38.00(38.00)]
+Gen. 30 (60.00%): Max/Min/Avg Fitness(Raw) [67.16(119.62)/47.44(7.49)/55.97(55.97)]
+Gen. 40 (80.00%): Max/Min/Avg Fitness(Raw) [80.16(124.22)/56.49(22.46)/66.80(66.80)]
+Gen. 50 (100.00%):estimators/NeuralFlow.py:108: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if self.weights_matrix == None:
+ Max/Min/Avg Fitness(Raw) [85.18(124.99)/61.75(35.87)/70.98(70.98)]
+Total time elapsed: 1.767 seconds.
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [18.57(36.74)/13.86(4.41)/15.47(15.47)]
+Gen. 10 (20.00%): Max/Min/Avg Fitness(Raw) [21.09(60.01)/16.58(5.59)/17.57(17.57)]
+Gen. 20 (40.00%): Max/Min/Avg Fitness(Raw) [31.72(71.82)/24.09(6.34)/26.43(26.43)]
+Gen. 30 (60.00%): Max/Min/Avg Fitness(Raw) [41.48(80.72)/30.21(5.48)/34.57(34.57)]
+Gen. 40 (80.00%): Max/Min/Avg Fitness(Raw) [64.39(100.06)/46.24(21.58)/53.66(53.66)]
+Gen. 50 (100.00%): Max/Min/Avg Fitness(Raw) [89.23(114.80)/52.28(14.32)/74.36(74.36)]
+Total time elapsed: 1.983 seconds.
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [20.36(54.50)/15.91(5.20)/16.97(16.97)]
+Gen. 10 (20.00%): Max/Min/Avg Fitness(Raw) [41.68(81.61)/31.20(10.88)/34.73(34.73)]
+Gen. 20 (40.00%): Max/Min/Avg Fitness(Raw) [53.39(98.83)/38.80(9.73)/44.49(44.49)]
+Gen. 30 (60.00%): Max/Min/Avg Fitness(Raw) [69.94(103.21)/45.92(10.65)/58.28(58.28)]
+Gen. 40 (80.00%): Max/Min/Avg Fitness(Raw) [85.89(134.88)/61.89(28.73)/71.58(71.58)]
+Gen. 50 (100.00%): Max/Min/Avg Fitness(Raw) [109.10(144.56)/75.14(44.37)/90.92(90.92)]
+Total time elapsed: 2.302 seconds.
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [23.34(54.39)/17.92(5.70)/19.45(19.45)]
+Gen. 10 (20.00%): Max/Min/Avg Fitness(Raw) [25.86(82.39)/20.46(6.15)/21.55(21.55)]
+Gen. 20 (40.00%): Max/Min/Avg Fitness(Raw) [32.77(103.79)/25.97(8.58)/27.31(27.31)]
+Gen. 30 (60.00%): Max/Min/Avg Fitness(Raw) [54.32(105.19)/39.82(9.20)/45.27(45.27)]
+Gen. 40 (80.00%): Max/Min/Avg Fitness(Raw) [69.61(110.53)/48.65(15.63)/58.01(58.01)]
+Gen. 50 (100.00%): Max/Min/Avg Fitness(Raw) [103.27(126.88)/71.20(50.83)/86.06(86.06)]
+Total time elapsed: 2.792 seconds.

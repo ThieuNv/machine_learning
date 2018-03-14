@@ -1,0 +1,4 @@
+nohup ipython experiments/ExperimentBPNNM.py > logBPNN2M &
+nohup ipython experiments/ExperimentGABPNNM.py > logGABPNN2M &
+nohup ipython experiments/ExperimentFuzzyBPNNM.py > logFuzzyBPNNM &
+nohup ipython experiments/ExperimentFGABPNNM.py > logFGABPNNM &
