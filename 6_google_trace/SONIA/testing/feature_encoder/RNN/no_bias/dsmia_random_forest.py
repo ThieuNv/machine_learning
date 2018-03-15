@@ -57,19 +57,13 @@ class Model(object):
         self.min_max_scaler = preprocessing.MinMaxScaler()
         self.standard_scaler = preprocessing.StandardScaler()
         
+ 
     def preprocessing_data(self):
         train_idx, test_idx, dataset_original, sliding = self.train_idx, self.test_idx, self.dataset_original, self.sliding
-        
-        ## Get original dataset
+        ## Transform all dataset
         dataset_split = dataset_original[:test_idx + sliding]
+        dataset_transform = self.min_max_scaler.fit_transform(dataset_split)
         
-        training_set = dataset_original[0:train_idx+sliding]
-        testing_set = dataset_original[train_idx+sliding:test_idx+sliding]
-        
-        training_set_transform = self.min_max_scaler.fit_transform(training_set)
-        testing_set_transform = self.min_max_scaler.transform(testing_set)
-        
-        dataset_transform = np.concatenate( (training_set_transform, testing_set_transform), axis=0 )
         ## Handle data with sliding
         dataset_sliding = dataset_transform[:len(dataset_transform)-sliding]
         for i in range(sliding-1):
@@ -173,7 +167,7 @@ class Model(object):
         y_ = tf.nn.elu( tf.matmul(X, W) )
         # Backward propagation
         cost    = tf.reduce_mean( tf.square(y_ - y) )
-        updates = tf.train.AdagradOptimizer(learning_rate=self.learning_rate).minimize(cost)
+        updates = tf.train.AdadeltaOptimizer(learning_rate=self.learning_rate).minimize(cost)
         
         loss_plot = []
         # start the session
@@ -276,6 +270,8 @@ class Model(object):
         self.predict()
         self.draw_loss()
         self.draw_predict()
+        self.draw_data_train()
+        self.draw_data_test()
         
     @staticmethod
     def distance_func(a, b):
@@ -321,15 +317,21 @@ full_path = "/home/thieunv/university/LabThayMinh/code/6_google_trace/tensorflow
 df = read_csv(full_path_name+ file_name, header=None, index_col=False, usecols=[0], engine='python')   
 dataset_original = df.values
 
-stimulation_level = [0.30]  #[0.10, 0.2, 0.25, 0.50, 1.0, 1.5, 2.0]  # [0.20]    
-positive_numbers = [0.25] #[0.005, 0.01, 0.025, 0.05, 0.1, 0.15, 0.20]     # [0.1]   
-learning_rates = [0.5] #[0.005, 0.01, 0.025, 0.05, 0.10, 0.12, 0.15]   # [0.2]    
-hyper_params = [ (0.85, 0.15) ]
+stimulation_level = [0.32]  #[0.10, 0.2, 0.25, 0.50, 1.0, 1.5, 2.0]  # [0.20]    
+positive_numbers = [0.15] #[0.005, 0.01, 0.025, 0.05, 0.1, 0.15, 0.20]     # [0.1]   
+learning_rates = [0.45] #[0.005, 0.01, 0.025, 0.05, 0.10, 0.12, 0.15]   # [0.2]    
+hyper_params = [ (0.90, 0.15) ]
 sliding_windows = [2] #[ 2, 3, 5]           # [3]  
-epochs = [3800] #[100, 250, 500, 1000, 1500, 2000]   # [500]                       
-batch_sizes = [32] #[8, 16, 32, 64, 128]      # [16]     
-list_num = [(2800, 4170)]
+epochs = [5800] #[100, 250, 500, 1000, 1500, 2000]   # [500]                       
+batch_sizes = [16] #[8, 16, 32, 64, 128]      # [16]     
+#list_num = [(2800, 4170)]
 
+
+#[0.3, 0.1, 0.01] - 0.35 (6 node) - Adam 
+#[0.32, 0.15, 0.25] - 0.36 (7 node) - Adelta
+ 
+
+list_num = [(2800, 4170)]
 
 pl1 = 1         # Use to draw figure
 #pl2 = 1000
@@ -353,4 +355,7 @@ for list_idx in list_num:
 
 print "Processing DONE !!!"
     
-    
+
+
+
+
