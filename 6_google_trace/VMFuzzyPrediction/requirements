@@ -1,0 +1,8 @@
+pip
+h5py
+numpy
+pandas
+Theano
+sklearn
+keras
+git+git://github.com/tensorflow/skflow.git

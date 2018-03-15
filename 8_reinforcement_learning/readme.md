@@ -34,3 +34,29 @@ http://pytorch.org/…/intermed…/reinforcement_q_learning.html
 https://www.youtube.com/user/CS188Spring2013
 
 Sách : http://incompleteideas.net/book/bookdraft2017nov5.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

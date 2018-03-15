@@ -1,0 +1,47 @@
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Loading Data
+Fuzzy distance = 0.0305
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [9.64(16.60)/7.34(4.33)/8.04(8.04)]
+Gen. 10 (33.33%): Max/Min/Avg Fitness(Raw) [15.42(25.32)/11.45(6.07)/12.85(12.85)]
+Gen. 20 (66.67%): Max/Min/Avg Fitness(Raw) [19.50(44.25)/15.11(6.45)/16.25(16.25)]
+Gen. 30 (100.00%):estimators/NeuralFlow.py:108: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if self.weights_matrix == None:
+ Max/Min/Avg Fitness(Raw) [24.17(46.86)/18.27(7.73)/20.14(20.14)]
+Total time elapsed: 0.891 seconds.
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mIndexError[0m                                Traceback (most recent call last)
+[0;32m/usr/lib/python2.7/dist-packages/IPython/utils/py3compat.pyc[0m in [0;36mexecfile[0;34m(fname, *where)[0m
+[1;32m    202[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m    203[0m                 [0mfilename[0m [0;34m=[0m [0mfname[0m[0;34m[0m[0m
+[0;32m--> 204[0;31m             [0m__builtin__[0m[0;34m.[0m[0mexecfile[0m[0;34m([0m[0mfilename[0m[0;34m,[0m [0;34m*[0m[0mwhere[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[0;32m/home/ubuntu/NhuanWorking/VMFuzzyPrediction/experiments/ExperimentFGABPNNM.py[0m in [0;36m<module>[0;34m()[0m
+[1;32m     56[0m     [0mnp[0m[0;34m.[0m[0msavez[0m[0;34m([0m[0;34m'FGABPNNM_%s_%s'[0m [0;34m%[0m [0;34m([0m[0msliding_number[0m[0;34m,[0m [0mscore_mae_CPU[0m[0;34m)[0m[0;34m,[0m [0my_pred[0m[0;34m=[0m[0my_pred[0m[0;34m,[0m [0my_true[0m[0;34m=[0m[0my_test[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     57[0m     [0;32mreturn[0m [0msliding_number[0m[0;34m,[0m [0mscore_mae_CPU[0m[0;34m,[0m [0mscore_mae_RAM[0m[0;34m[0m[0m
+[0;32m---> 58[0;31m [0mresult[0m [0;34m=[0m [0;34m[[0m[0mexperiment[0m[0;34m([0m[0msliding_number[0m[0;34m=[0m[0mi[0m[0;34m)[0m [0;32mfor[0m [0mi[0m [0;32min[0m [0mnp[0m[0;34m.[0m[0marange[0m[0;34m([0m[0;36m2[0m[0;34m,[0m [0;36m6[0m[0;34m)[0m[0;34m][0m[0;34m[0m[0m
+[0m[1;32m     59[0m [0mresult[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mDataFrame[0m[0;34m([0m[0mresult[0m[0;34m,[0m [0mcolumns[0m[0;34m=[0m[0;34m[[0m[0;34m"sliding_number"[0m[0;34m,[0m [0;34m"MAE CPU"[0m[0;34m,[0m [0;34m"MAE RAM"[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     60[0m [0mresult[0m[0;34m.[0m[0mto_csv[0m[0;34m([0m[0;34m'fuzzy_gabpnn_experimentm.csv'[0m[0;34m)[0m[0;34m[0m[0m
+
+[0;32m/home/ubuntu/NhuanWorking/VMFuzzyPrediction/experiments/ExperimentFGABPNNM.py[0m in [0;36mexperiment[0;34m(sliding_number)[0m
+[1;32m     50[0m     [0mclassifier[0m[0;34m.[0m[0mfit[0m[0;34m([0m[0mX_train[0m[0;34m,[0m[0my_train[0m[0;34m,[0m [0;34m**[0m[0mfit_params[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     51[0m     [0my_pred[0m [0;34m=[0m [0mnp[0m[0;34m.[0m[0mround[0m[0;34m([0m[0mabs[0m[0;34m([0m[0mclassifier[0m[0;34m.[0m[0mpredict[0m[0;34m([0m[0mX_test[0m[0;34m)[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[0;32m---> 52[0;31m     [0my_cpu[0m [0;34m=[0m [0mdataset_holder[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m.[0m[0minverse_transform[0m[0;34m([0m[0mabs[0m[0;34m([0m[0my_pred[0m[0;34m[[0m[0;34m:[0m[0;34m,[0m [0;36m0[0m[0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m     53[0m     [0my_ram[0m [0;34m=[0m [0mdataset_holder[0m[0;34m[[0m[0;36m1[0m[0;34m][0m[0;34m.[0m[0minverse_transform[0m[0;34m([0m[0mabs[0m[0;34m([0m[0my_pred[0m[0;34m[[0m[0;34m:[0m[0;34m,[0m [0;36m1[0m[0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     54[0m     [0mscore_mae_CPU[0m [0;34m=[0m [0mmean_absolute_error[0m[0;34m([0m[0my_cpu[0m[0;34m,[0m [0mtrainee_holder[0m[0;34m[[0m[0;34m'cpu_rate'[0m[0;34m][0m[0;34m[[0m[0;34m'y_test'[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0m
+
+[0;32m/home/ubuntu/NhuanWorking/VMFuzzyPrediction/estimators/FuzzyFlow.pyc[0m in [0;36minverse_transform[0;34m(self, ypred)[0m
+[1;32m     61[0m         [0;32mreturn[0m [0mself[0m[0;34m[0m[0m
+[1;32m     62[0m     [0;32mdef[0m [0minverse_transform[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mypred[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0;32m---> 63[0;31m         [0;32mreturn[0m [0;34m[[0m[0mself[0m[0;34m.[0m[0mdefuzzy[0m[0;34m([0m[0mitem[0m[0;34m%[0m[0mlen[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mu_unique_mapping[0m[0;34m)[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mu_unique_mapping[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mu_midpoints[0m[0;34m)[0m [0;32mfor[0m [0mitem[0m [0;32min[0m [0mypred[0m[0;34m][0m[0;34m[0m[0m
+[0m
+[0;32m/home/ubuntu/NhuanWorking/VMFuzzyPrediction/estimators/FuzzyFlow.pyc[0m in [0;36mdefuzzy[0;34m(self, index, inverted, midpoints)[0m
+[1;32m     31[0m     [0;32mdef[0m [0mdefuzzy[0m[0;34m([0m[0mself[0m[0;34m,[0m[0mindex[0m[0;34m,[0m [0minverted[0m[0;34m,[0m [0mmidpoints[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m     32[0m         [0mf_class[0m [0;34m=[0m [0minverted[0m[0;34m[[0m[0mindex[0m[0;34m][0m[0;34m[0m[0m
+[0;32m---> 33[0;31m         [0;32mreturn[0m [0mmidpoints[0m[0;34m[[0m[0mf_class[0m[0;34m][0m[0;34m[0m[0m
+[0m[1;32m     34[0m     [0;32mdef[0m [0mfit_transform[0m[0;34m([0m[0mself[0m[0;34m,[0m[0mdat[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m     35[0m         [0mdistance[0m [0;34m=[0m [0mround[0m[0;34m([0m[0mdat[0m[0;34m.[0m[0mmax[0m[0;34m([0m[0;34m)[0m [0;34m/[0m [0;34m([0m[0mdat[0m[0;34m.[0m[0mmax[0m[0;34m([0m[0;34m)[0m [0;34m/[0m [0;36m0.25[0m [0;34m+[0m [0;36m4[0m[0;34m)[0m[0;34m,[0m [0;36m4[0m[0;34m)[0m[0;34m[0m[0m
+
+[0;31mIndexError[0m: list index out of range

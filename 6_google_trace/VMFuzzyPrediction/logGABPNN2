@@ -1,0 +1,3326 @@
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+Loading Data
+Fuzzy distance = 0.2478
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.91(4.52)/1.42(0.07)/1.59(1.59)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.23(6.45)/2.37(0.43)/2.69(2.69)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.26(8.00)/2.45(0.12)/2.72(2.72)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.27(9.77)/3.71(0.19)/4.39(4.39)]
+Gen. 40 (100.00%):estimators/NeuralFlow.py:108: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if self.weights_matrix == None:
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.09(12.85)/4.95(0.28)/5.91(5.91)]
+Total time elapsed: 4.602 seconds.
+Step #100, epoch #4, avg. train loss: 27.67740
+Step #200, epoch #9, avg. train loss: 12.49645
+Step #300, epoch #14, avg. train loss: 5.00220
+Step #400, epoch #19, avg. train loss: 1.55238
+Step #500, epoch #23, avg. train loss: 0.17697
+Step #600, epoch #28, avg. train loss: 0.00161
+Step #700, epoch #33, avg. train loss: 0.00147
+Step #800, epoch #38, avg. train loss: 0.00152
+Step #900, epoch #42, avg. train loss: 0.00146
+Step #1000, epoch #47, avg. train loss: 0.00145
+Step #1100, epoch #52, avg. train loss: 0.00143
+Step #1200, epoch #57, avg. train loss: 0.00140
+Step #1300, epoch #61, avg. train loss: 0.00137
+Step #1400, epoch #66, avg. train loss: 0.00136
+Step #1500, epoch #71, avg. train loss: 0.00131
+Step #1600, epoch #76, avg. train loss: 0.00125
+Step #1700, epoch #80, avg. train loss: 0.00128
+Step #1800, epoch #85, avg. train loss: 0.00120
+Step #1900, epoch #90, avg. train loss: 0.00124
+Step #2000, epoch #95, avg. train loss: 0.00115
+Step #2100, epoch #100, avg. train loss: 0.00115
+Step #2200, epoch #104, avg. train loss: 0.00111
+Step #2300, epoch #109, avg. train loss: 0.00109
+Step #2400, epoch #114, avg. train loss: 0.00103
+Step #2500, epoch #119, avg. train loss: 0.00105
+Step #2600, epoch #123, avg. train loss: 0.00098
+Step #2700, epoch #128, avg. train loss: 0.00099
+Step #2800, epoch #133, avg. train loss: 0.00095
+Step #2900, epoch #138, avg. train loss: 0.00094
+Step #3000, epoch #142, avg. train loss: 0.00088
+Step #3100, epoch #147, avg. train loss: 0.00089
+Step #3200, epoch #152, avg. train loss: 0.00090
+Step #3300, epoch #157, avg. train loss: 0.00081
+Step #3400, epoch #161, avg. train loss: 0.00081
+Step #3500, epoch #166, avg. train loss: 0.00079
+Step #3600, epoch #171, avg. train loss: 0.00079
+Step #3700, epoch #176, avg. train loss: 0.00077
+Step #3800, epoch #180, avg. train loss: 0.00078
+Step #3900, epoch #185, avg. train loss: 0.00074
+Step #4000, epoch #190, avg. train loss: 0.00073
+Step #4100, epoch #195, avg. train loss: 0.00071
+Step #4200, epoch #200, avg. train loss: 0.00072
+Step #4300, epoch #204, avg. train loss: 0.00072
+Step #4400, epoch #209, avg. train loss: 0.00070
+Step #4500, epoch #214, avg. train loss: 0.00066
+Step #4600, epoch #219, avg. train loss: 0.00069
+Step #4700, epoch #223, avg. train loss: 0.00069
+Step #4800, epoch #228, avg. train loss: 0.00066
+Step #4900, epoch #233, avg. train loss: 0.00068
+Step #5000, epoch #238, avg. train loss: 0.00067
+Step #5100, epoch #242, avg. train loss: 0.00068
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00068
+Step #5400, epoch #257, avg. train loss: 0.00067
+Step #5500, epoch #261, avg. train loss: 0.00064
+Step #5600, epoch #266, avg. train loss: 0.00067
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00064
+Step #5900, epoch #280, avg. train loss: 0.00067
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00070
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00064
+Step #6400, epoch #304, avg. train loss: 0.00066
+Step #6500, epoch #309, avg. train loss: 0.00066
+Step #6600, epoch #314, avg. train loss: 0.00065
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00070
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.78(3.31)/1.25(0.06)/1.48(1.48)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.22(5.98)/1.70(0.17)/1.85(1.85)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.36(8.84)/2.56(0.16)/2.80(2.80)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [2.97(8.86)/2.30(0.16)/2.48(2.48)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.26(9.02)/3.14(0.35)/3.55(3.55)]
+Total time elapsed: 5.345 seconds.
+Step #100, epoch #4, avg. train loss: 16.21121
+Step #200, epoch #9, avg. train loss: 7.29936
+Step #300, epoch #14, avg. train loss: 3.10090
+Step #400, epoch #19, avg. train loss: 1.23022
+Step #500, epoch #23, avg. train loss: 0.33593
+Step #600, epoch #28, avg. train loss: 0.02359
+Step #700, epoch #33, avg. train loss: 0.00090
+Step #800, epoch #38, avg. train loss: 0.00065
+Step #900, epoch #42, avg. train loss: 0.00066
+Step #1000, epoch #47, avg. train loss: 0.00068
+Step #1100, epoch #52, avg. train loss: 0.00066
+Step #1200, epoch #57, avg. train loss: 0.00067
+Step #1300, epoch #61, avg. train loss: 0.00066
+Step #1400, epoch #66, avg. train loss: 0.00067
+Step #1500, epoch #71, avg. train loss: 0.00065
+Step #1600, epoch #76, avg. train loss: 0.00065
+Step #1700, epoch #80, avg. train loss: 0.00064
+Step #1800, epoch #85, avg. train loss: 0.00063
+Step #1900, epoch #90, avg. train loss: 0.00063
+Step #2000, epoch #95, avg. train loss: 0.00065
+Step #2100, epoch #100, avg. train loss: 0.00062
+Step #2200, epoch #104, avg. train loss: 0.00062
+Step #2300, epoch #109, avg. train loss: 0.00065
+Step #2400, epoch #114, avg. train loss: 0.00064
+Step #2500, epoch #119, avg. train loss: 0.00060
+Step #2600, epoch #123, avg. train loss: 0.00061
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00059
+Step #2900, epoch #138, avg. train loss: 0.00062
+Step #3000, epoch #142, avg. train loss: 0.00064
+Step #3100, epoch #147, avg. train loss: 0.00059
+Step #3200, epoch #152, avg. train loss: 0.00064
+Step #3300, epoch #157, avg. train loss: 0.00060
+Step #3400, epoch #161, avg. train loss: 0.00062
+Step #3500, epoch #166, avg. train loss: 0.00061
+Step #3600, epoch #171, avg. train loss: 0.00062
+Step #3700, epoch #176, avg. train loss: 0.00061
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00059
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00060
+Step #4200, epoch #200, avg. train loss: 0.00061
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00059
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00059
+Step #4700, epoch #223, avg. train loss: 0.00062
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00060
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00059
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00060
+Step #5400, epoch #257, avg. train loss: 0.00061
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00060
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00059
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00061
+Step #6100, epoch #290, avg. train loss: 0.00060
+Step #6200, epoch #295, avg. train loss: 0.00058
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00057
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00059
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00058
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.12(2.68)/0.84(0.04)/0.93(0.93)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.97(4.54)/1.47(0.13)/1.64(1.64)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.28(6.70)/2.80(0.21)/3.56(3.56)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.39(9.78)/3.32(0.77)/3.66(3.66)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.28(10.38)/4.52(1.69)/5.24(5.24)]
+Total time elapsed: 6.934 seconds.
+Step #100, epoch #4, avg. train loss: 19.95399
+Step #200, epoch #9, avg. train loss: 9.01501
+Step #300, epoch #14, avg. train loss: 3.76274
+Step #400, epoch #19, avg. train loss: 1.35597
+Step #500, epoch #23, avg. train loss: 0.26405
+Step #600, epoch #28, avg. train loss: 0.00544
+Step #700, epoch #33, avg. train loss: 0.00091
+Step #800, epoch #38, avg. train loss: 0.00089
+Step #900, epoch #42, avg. train loss: 0.00088
+Step #1000, epoch #47, avg. train loss: 0.00090
+Step #1100, epoch #52, avg. train loss: 0.00087
+Step #1200, epoch #57, avg. train loss: 0.00087
+Step #1300, epoch #61, avg. train loss: 0.00088
+Step #1400, epoch #66, avg. train loss: 0.00087
+Step #1500, epoch #71, avg. train loss: 0.00086
+Step #1600, epoch #76, avg. train loss: 0.00083
+Step #1700, epoch #80, avg. train loss: 0.00082
+Step #1800, epoch #85, avg. train loss: 0.00083
+Step #1900, epoch #90, avg. train loss: 0.00080
+Step #2000, epoch #95, avg. train loss: 0.00082
+Step #2100, epoch #100, avg. train loss: 0.00080
+Step #2200, epoch #104, avg. train loss: 0.00080
+Step #2300, epoch #109, avg. train loss: 0.00078
+Step #2400, epoch #114, avg. train loss: 0.00075
+Step #2500, epoch #119, avg. train loss: 0.00080
+Step #2600, epoch #123, avg. train loss: 0.00075
+Step #2700, epoch #128, avg. train loss: 0.00078
+Step #2800, epoch #133, avg. train loss: 0.00069
+Step #2900, epoch #138, avg. train loss: 0.00077
+Step #3000, epoch #142, avg. train loss: 0.00071
+Step #3100, epoch #147, avg. train loss: 0.00073
+Step #3200, epoch #152, avg. train loss: 0.00071
+Step #3300, epoch #157, avg. train loss: 0.00073
+Step #3400, epoch #161, avg. train loss: 0.00068
+Step #3500, epoch #166, avg. train loss: 0.00070
+Step #3600, epoch #171, avg. train loss: 0.00070
+Step #3700, epoch #176, avg. train loss: 0.00069
+Step #3800, epoch #180, avg. train loss: 0.00067
+Step #3900, epoch #185, avg. train loss: 0.00066
+Step #4000, epoch #190, avg. train loss: 0.00067
+Step #4100, epoch #195, avg. train loss: 0.00066
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00067
+Step #4500, epoch #214, avg. train loss: 0.00067
+Step #4600, epoch #219, avg. train loss: 0.00062
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00063
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00063
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00062
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00061
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.89(2.86)/0.69(0.06)/0.74(0.74)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.90(5.67)/1.46(0.07)/1.58(1.58)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.77(6.30)/2.06(0.13)/2.31(2.31)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.40(7.76)/2.53(0.23)/2.83(2.83)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.48(10.69)/4.47(0.85)/5.40(5.40)]
+Total time elapsed: 10.927 seconds.
+Step #100, epoch #4, avg. train loss: 3.21912
+Step #200, epoch #9, avg. train loss: 0.13535
+Step #300, epoch #14, avg. train loss: 0.00117
+Step #400, epoch #19, avg. train loss: 0.00114
+Step #500, epoch #23, avg. train loss: 0.00107
+Step #600, epoch #28, avg. train loss: 0.00100
+Step #700, epoch #33, avg. train loss: 0.00097
+Step #800, epoch #38, avg. train loss: 0.00093
+Step #900, epoch #42, avg. train loss: 0.00088
+Step #1000, epoch #47, avg. train loss: 0.00082
+Step #1100, epoch #52, avg. train loss: 0.00081
+Step #1200, epoch #57, avg. train loss: 0.00079
+Step #1300, epoch #61, avg. train loss: 0.00077
+Step #1400, epoch #66, avg. train loss: 0.00075
+Step #1500, epoch #71, avg. train loss: 0.00070
+Step #1600, epoch #76, avg. train loss: 0.00072
+Step #1700, epoch #80, avg. train loss: 0.00071
+Step #1800, epoch #85, avg. train loss: 0.00068
+Step #1900, epoch #90, avg. train loss: 0.00066
+Step #2000, epoch #95, avg. train loss: 0.00068
+Step #2100, epoch #100, avg. train loss: 0.00065
+Step #2200, epoch #104, avg. train loss: 0.00065
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00062
+Step #2500, epoch #119, avg. train loss: 0.00062
+Step #2600, epoch #123, avg. train loss: 0.00062
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00060
+Step #2900, epoch #138, avg. train loss: 0.00062
+Step #3000, epoch #142, avg. train loss: 0.00060
+Step #3100, epoch #147, avg. train loss: 0.00063
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00061
+Step #3400, epoch #161, avg. train loss: 0.00060
+Step #3500, epoch #166, avg. train loss: 0.00062
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00059
+Step #3800, epoch #180, avg. train loss: 0.00062
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00062
+Step #4100, epoch #195, avg. train loss: 0.00060
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00059
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00059
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00060
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.23(6.45)/1.73(0.23)/1.86(1.86)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.93(7.83)/2.24(0.21)/2.44(2.44)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.35(9.25)/3.18(0.13)/3.63(3.63)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [7.14(12.41)/4.99(0.76)/5.95(5.95)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [10.85(14.59)/7.46(4.17)/9.04(9.04)]
+Total time elapsed: 8.435 seconds.
+Step #100, epoch #4, avg. train loss: 9.44087
+Step #200, epoch #9, avg. train loss: 1.39765
+Step #300, epoch #14, avg. train loss: 0.00763
+Step #400, epoch #19, avg. train loss: 0.00174
+Step #500, epoch #23, avg. train loss: 0.00161
+Step #600, epoch #28, avg. train loss: 0.00157
+Step #700, epoch #33, avg. train loss: 0.00145
+Step #800, epoch #38, avg. train loss: 0.00144
+Step #900, epoch #42, avg. train loss: 0.00140
+Step #1000, epoch #47, avg. train loss: 0.00127
+Step #1100, epoch #52, avg. train loss: 0.00123
+Step #1200, epoch #57, avg. train loss: 0.00117
+Step #1300, epoch #61, avg. train loss: 0.00111
+Step #1400, epoch #66, avg. train loss: 0.00107
+Step #1500, epoch #71, avg. train loss: 0.00102
+Step #1600, epoch #76, avg. train loss: 0.00096
+Step #1700, epoch #80, avg. train loss: 0.00094
+Step #1800, epoch #85, avg. train loss: 0.00088
+Step #1900, epoch #90, avg. train loss: 0.00089
+Step #2000, epoch #95, avg. train loss: 0.00082
+Step #2100, epoch #100, avg. train loss: 0.00080
+Step #2200, epoch #104, avg. train loss: 0.00077
+Step #2300, epoch #109, avg. train loss: 0.00077
+Step #2400, epoch #114, avg. train loss: 0.00074
+Step #2500, epoch #119, avg. train loss: 0.00076
+Step #2600, epoch #123, avg. train loss: 0.00071
+Step #2700, epoch #128, avg. train loss: 0.00071
+Step #2800, epoch #133, avg. train loss: 0.00069
+Step #2900, epoch #138, avg. train loss: 0.00072
+Step #3000, epoch #142, avg. train loss: 0.00067
+Step #3100, epoch #147, avg. train loss: 0.00069
+Step #3200, epoch #152, avg. train loss: 0.00070
+Step #3300, epoch #157, avg. train loss: 0.00066
+Step #3400, epoch #161, avg. train loss: 0.00066
+Step #3500, epoch #166, avg. train loss: 0.00067
+Step #3600, epoch #171, avg. train loss: 0.00067
+Step #3700, epoch #176, avg. train loss: 0.00067
+Step #3800, epoch #180, avg. train loss: 0.00068
+Step #3900, epoch #185, avg. train loss: 0.00066
+Step #4000, epoch #190, avg. train loss: 0.00066
+Step #4100, epoch #195, avg. train loss: 0.00066
+Step #4200, epoch #200, avg. train loss: 0.00068
+Step #4300, epoch #204, avg. train loss: 0.00068
+Step #4400, epoch #209, avg. train loss: 0.00067
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00067
+Step #4700, epoch #223, avg. train loss: 0.00067
+Step #4800, epoch #228, avg. train loss: 0.00065
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00067
+Step #5100, epoch #242, avg. train loss: 0.00067
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00069
+Step #5400, epoch #257, avg. train loss: 0.00068
+Step #5500, epoch #261, avg. train loss: 0.00065
+Step #5600, epoch #266, avg. train loss: 0.00067
+Step #5700, epoch #271, avg. train loss: 0.00065
+Step #5800, epoch #276, avg. train loss: 0.00065
+Step #5900, epoch #280, avg. train loss: 0.00068
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00071
+Step #6200, epoch #295, avg. train loss: 0.00065
+Step #6300, epoch #300, avg. train loss: 0.00064
+Step #6400, epoch #304, avg. train loss: 0.00067
+Step #6500, epoch #309, avg. train loss: 0.00067
+Step #6600, epoch #314, avg. train loss: 0.00065
+Step #6700, epoch #319, avg. train loss: 0.00064
+Step #6800, epoch #323, avg. train loss: 0.00065
+Step #6900, epoch #328, avg. train loss: 0.00070
+Step #7000, epoch #333, avg. train loss: 0.00064
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.31(4.27)/1.02(0.11)/1.09(1.09)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.31(7.75)/1.80(0.04)/1.93(1.93)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.68(9.78)/3.40(0.09)/3.90(3.90)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.92(11.96)/5.03(1.78)/5.77(5.77)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.20(12.19)/4.58(1.16)/5.17(5.17)]
+Total time elapsed: 7.029 seconds.
+Step #100, epoch #4, avg. train loss: 25.46392
+Step #200, epoch #9, avg. train loss: 11.50862
+Step #300, epoch #14, avg. train loss: 4.68779
+Step #400, epoch #19, avg. train loss: 1.51107
+Step #500, epoch #23, avg. train loss: 0.19298
+Step #600, epoch #28, avg. train loss: 0.00104
+Step #700, epoch #33, avg. train loss: 0.00081
+Step #800, epoch #38, avg. train loss: 0.00080
+Step #900, epoch #42, avg. train loss: 0.00081
+Step #1000, epoch #47, avg. train loss: 0.00081
+Step #1100, epoch #52, avg. train loss: 0.00078
+Step #1200, epoch #57, avg. train loss: 0.00079
+Step #1300, epoch #61, avg. train loss: 0.00077
+Step #1400, epoch #66, avg. train loss: 0.00077
+Step #1500, epoch #71, avg. train loss: 0.00073
+Step #1600, epoch #76, avg. train loss: 0.00074
+Step #1700, epoch #80, avg. train loss: 0.00073
+Step #1800, epoch #85, avg. train loss: 0.00070
+Step #1900, epoch #90, avg. train loss: 0.00071
+Step #2000, epoch #95, avg. train loss: 0.00071
+Step #2100, epoch #100, avg. train loss: 0.00068
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00069
+Step #2400, epoch #114, avg. train loss: 0.00068
+Step #2500, epoch #119, avg. train loss: 0.00063
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00069
+Step #2800, epoch #133, avg. train loss: 0.00062
+Step #2900, epoch #138, avg. train loss: 0.00064
+Step #3000, epoch #142, avg. train loss: 0.00066
+Step #3100, epoch #147, avg. train loss: 0.00062
+Step #3200, epoch #152, avg. train loss: 0.00067
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00066
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00064
+Step #4300, epoch #204, avg. train loss: 0.00065
+Step #4400, epoch #209, avg. train loss: 0.00062
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00062
+Step #4700, epoch #223, avg. train loss: 0.00065
+Step #4800, epoch #228, avg. train loss: 0.00063
+Step #4900, epoch #233, avg. train loss: 0.00063
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00065
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00065
+Step #5500, epoch #261, avg. train loss: 0.00064
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00065
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00063
+Step #6000, epoch #285, avg. train loss: 0.00065
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00062
+Step #6300, epoch #300, avg. train loss: 0.00064
+Step #6400, epoch #304, avg. train loss: 0.00065
+Step #6500, epoch #309, avg. train loss: 0.00061
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00065
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00066
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.01(2.61)/0.76(0.03)/0.84(0.84)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.50(3.85)/1.14(0.08)/1.25(1.25)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.81(5.93)/2.08(0.32)/2.34(2.34)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.73(8.20)/2.77(0.36)/3.11(3.11)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.96(9.23)/3.55(0.57)/4.13(4.13)]
+Total time elapsed: 7.024 seconds.
+Step #100, epoch #4, avg. train loss: 16.40739
+Step #200, epoch #9, avg. train loss: 7.10824
+Step #300, epoch #14, avg. train loss: 2.95810
+Step #400, epoch #19, avg. train loss: 1.18929
+Step #500, epoch #23, avg. train loss: 0.35550
+Step #600, epoch #28, avg. train loss: 0.03360
+Step #700, epoch #33, avg. train loss: 0.00165
+Step #800, epoch #38, avg. train loss: 0.00112
+Step #900, epoch #42, avg. train loss: 0.00112
+Step #1000, epoch #47, avg. train loss: 0.00113
+Step #1100, epoch #52, avg. train loss: 0.00107
+Step #1200, epoch #57, avg. train loss: 0.00108
+Step #1300, epoch #61, avg. train loss: 0.00106
+Step #1400, epoch #66, avg. train loss: 0.00105
+Step #1500, epoch #71, avg. train loss: 0.00102
+Step #1600, epoch #76, avg. train loss: 0.00098
+Step #1700, epoch #80, avg. train loss: 0.00096
+Step #1800, epoch #85, avg. train loss: 0.00095
+Step #1900, epoch #90, avg. train loss: 0.00091
+Step #2000, epoch #95, avg. train loss: 0.00095
+Step #2100, epoch #100, avg. train loss: 0.00089
+Step #2200, epoch #104, avg. train loss: 0.00089
+Step #2300, epoch #109, avg. train loss: 0.00088
+Step #2400, epoch #114, avg. train loss: 0.00083
+Step #2500, epoch #119, avg. train loss: 0.00085
+Step #2600, epoch #123, avg. train loss: 0.00081
+Step #2700, epoch #128, avg. train loss: 0.00083
+Step #2800, epoch #133, avg. train loss: 0.00074
+Step #2900, epoch #138, avg. train loss: 0.00081
+Step #3000, epoch #142, avg. train loss: 0.00075
+Step #3100, epoch #147, avg. train loss: 0.00075
+Step #3200, epoch #152, avg. train loss: 0.00074
+Step #3300, epoch #157, avg. train loss: 0.00075
+Step #3400, epoch #161, avg. train loss: 0.00070
+Step #3500, epoch #166, avg. train loss: 0.00072
+Step #3600, epoch #171, avg. train loss: 0.00072
+Step #3700, epoch #176, avg. train loss: 0.00071
+Step #3800, epoch #180, avg. train loss: 0.00068
+Step #3900, epoch #185, avg. train loss: 0.00067
+Step #4000, epoch #190, avg. train loss: 0.00068
+Step #4100, epoch #195, avg. train loss: 0.00067
+Step #4200, epoch #200, avg. train loss: 0.00067
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00066
+Step #4500, epoch #214, avg. train loss: 0.00068
+Step #4600, epoch #219, avg. train loss: 0.00063
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00063
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00062
+Step #6100, epoch #290, avg. train loss: 0.00063
+Step #6200, epoch #295, avg. train loss: 0.00063
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00061
+Step #6600, epoch #314, avg. train loss: 0.00061
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00061
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.02(2.44)/0.77(0.04)/0.85(0.85)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.98(3.85)/1.44(0.28)/1.65(1.65)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.56(6.89)/1.96(0.17)/2.13(2.13)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.84(7.89)/2.81(0.33)/3.20(3.20)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.43(9.27)/4.68(2.86)/5.36(5.36)]
+Total time elapsed: 10.221 seconds.
+Step #100, epoch #4, avg. train loss: 1.96254
+Step #200, epoch #9, avg. train loss: 0.05813
+Step #300, epoch #14, avg. train loss: 0.00099
+Step #400, epoch #19, avg. train loss: 0.00094
+Step #500, epoch #23, avg. train loss: 0.00091
+Step #600, epoch #28, avg. train loss: 0.00088
+Step #700, epoch #33, avg. train loss: 0.00083
+Step #800, epoch #38, avg. train loss: 0.00081
+Step #900, epoch #42, avg. train loss: 0.00079
+Step #1000, epoch #47, avg. train loss: 0.00077
+Step #1100, epoch #52, avg. train loss: 0.00072
+Step #1200, epoch #57, avg. train loss: 0.00073
+Step #1300, epoch #61, avg. train loss: 0.00072
+Step #1400, epoch #66, avg. train loss: 0.00070
+Step #1500, epoch #71, avg. train loss: 0.00067
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00067
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00064
+Step #2100, epoch #100, avg. train loss: 0.00064
+Step #2200, epoch #104, avg. train loss: 0.00063
+Step #2300, epoch #109, avg. train loss: 0.00064
+Step #2400, epoch #114, avg. train loss: 0.00061
+Step #2500, epoch #119, avg. train loss: 0.00061
+Step #2600, epoch #123, avg. train loss: 0.00062
+Step #2700, epoch #128, avg. train loss: 0.00063
+Step #2800, epoch #133, avg. train loss: 0.00059
+Step #2900, epoch #138, avg. train loss: 0.00061
+Step #3000, epoch #142, avg. train loss: 0.00059
+Step #3100, epoch #147, avg. train loss: 0.00061
+Step #3200, epoch #152, avg. train loss: 0.00061
+Step #3300, epoch #157, avg. train loss: 0.00060
+Step #3400, epoch #161, avg. train loss: 0.00058
+Step #3500, epoch #166, avg. train loss: 0.00061
+Step #3600, epoch #171, avg. train loss: 0.00062
+Step #3700, epoch #176, avg. train loss: 0.00058
+Step #3800, epoch #180, avg. train loss: 0.00060
+Step #3900, epoch #185, avg. train loss: 0.00060
+Step #4000, epoch #190, avg. train loss: 0.00060
+Step #4100, epoch #195, avg. train loss: 0.00059
+Step #4200, epoch #200, avg. train loss: 0.00060
+Step #4300, epoch #204, avg. train loss: 0.00061
+Step #4400, epoch #209, avg. train loss: 0.00058
+Step #4500, epoch #214, avg. train loss: 0.00062
+Step #4600, epoch #219, avg. train loss: 0.00057
+Step #4700, epoch #223, avg. train loss: 0.00059
+Step #4800, epoch #228, avg. train loss: 0.00059
+Step #4900, epoch #233, avg. train loss: 0.00062
+Step #5000, epoch #238, avg. train loss: 0.00059
+Step #5100, epoch #242, avg. train loss: 0.00061
+Step #5200, epoch #247, avg. train loss: 0.00058
+Step #5300, epoch #252, avg. train loss: 0.00059
+Step #5400, epoch #257, avg. train loss: 0.00060
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00059
+Step #5700, epoch #271, avg. train loss: 0.00059
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00057
+Step #6000, epoch #285, avg. train loss: 0.00058
+Step #6100, epoch #290, avg. train loss: 0.00063
+Step #6200, epoch #295, avg. train loss: 0.00058
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00060
+Step #6500, epoch #309, avg. train loss: 0.00061
+Step #6600, epoch #314, avg. train loss: 0.00058
+Step #6700, epoch #319, avg. train loss: 0.00060
+Step #6800, epoch #323, avg. train loss: 0.00060
+Step #6900, epoch #328, avg. train loss: 0.00058
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.65(3.44)/1.21(0.08)/1.38(1.38)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.07(5.99)/2.19(0.08)/2.56(2.56)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.47(10.46)/3.34(0.23)/3.73(3.73)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [8.37(13.67)/5.87(1.69)/6.97(6.97)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [9.19(16.94)/6.92(3.18)/7.66(7.66)]
+Total time elapsed: 8.942 seconds.
+Step #100, epoch #4, avg. train loss: 14.37272
+Step #200, epoch #9, avg. train loss: 2.52703
+Step #300, epoch #14, avg. train loss: 0.03930
+Step #400, epoch #19, avg. train loss: 0.00099
+Step #500, epoch #23, avg. train loss: 0.00095
+Step #600, epoch #28, avg. train loss: 0.00094
+Step #700, epoch #33, avg. train loss: 0.00088
+Step #800, epoch #38, avg. train loss: 0.00091
+Step #900, epoch #42, avg. train loss: 0.00089
+Step #1000, epoch #47, avg. train loss: 0.00084
+Step #1100, epoch #52, avg. train loss: 0.00084
+Step #1200, epoch #57, avg. train loss: 0.00081
+Step #1300, epoch #61, avg. train loss: 0.00080
+Step #1400, epoch #66, avg. train loss: 0.00079
+Step #1500, epoch #71, avg. train loss: 0.00077
+Step #1600, epoch #76, avg. train loss: 0.00074
+Step #1700, epoch #80, avg. train loss: 0.00076
+Step #1800, epoch #85, avg. train loss: 0.00072
+Step #1900, epoch #90, avg. train loss: 0.00076
+Step #2000, epoch #95, avg. train loss: 0.00070
+Step #2100, epoch #100, avg. train loss: 0.00071
+Step #2200, epoch #104, avg. train loss: 0.00069
+Step #2300, epoch #109, avg. train loss: 0.00070
+Step #2400, epoch #114, avg. train loss: 0.00068
+Step #2500, epoch #119, avg. train loss: 0.00071
+Step #2600, epoch #123, avg. train loss: 0.00067
+Step #2700, epoch #128, avg. train loss: 0.00068
+Step #2800, epoch #133, avg. train loss: 0.00067
+Step #2900, epoch #138, avg. train loss: 0.00070
+Step #3000, epoch #142, avg. train loss: 0.00066
+Step #3100, epoch #147, avg. train loss: 0.00068
+Step #3200, epoch #152, avg. train loss: 0.00070
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00066
+Step #3600, epoch #171, avg. train loss: 0.00067
+Step #3700, epoch #176, avg. train loss: 0.00066
+Step #3800, epoch #180, avg. train loss: 0.00068
+Step #3900, epoch #185, avg. train loss: 0.00066
+Step #4000, epoch #190, avg. train loss: 0.00066
+Step #4100, epoch #195, avg. train loss: 0.00066
+Step #4200, epoch #200, avg. train loss: 0.00068
+Step #4300, epoch #204, avg. train loss: 0.00067
+Step #4400, epoch #209, avg. train loss: 0.00067
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00067
+Step #4700, epoch #223, avg. train loss: 0.00067
+Step #4800, epoch #228, avg. train loss: 0.00065
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00067
+Step #5100, epoch #242, avg. train loss: 0.00068
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00070
+Step #5400, epoch #257, avg. train loss: 0.00068
+Step #5500, epoch #261, avg. train loss: 0.00066
+Step #5600, epoch #266, avg. train loss: 0.00068
+Step #5700, epoch #271, avg. train loss: 0.00065
+Step #5800, epoch #276, avg. train loss: 0.00065
+Step #5900, epoch #280, avg. train loss: 0.00068
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00072
+Step #6200, epoch #295, avg. train loss: 0.00066
+Step #6300, epoch #300, avg. train loss: 0.00065
+Step #6400, epoch #304, avg. train loss: 0.00068
+Step #6500, epoch #309, avg. train loss: 0.00069
+Step #6600, epoch #314, avg. train loss: 0.00067
+Step #6700, epoch #319, avg. train loss: 0.00065
+Step #6800, epoch #323, avg. train loss: 0.00066
+Step #6900, epoch #328, avg. train loss: 0.00071
+Step #7000, epoch #333, avg. train loss: 0.00064
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.24(2.72)/0.92(0.10)/1.03(1.03)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.84(4.98)/1.41(0.08)/1.54(1.54)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.43(7.20)/1.88(0.14)/2.03(2.03)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.23(8.33)/3.04(0.25)/3.52(3.52)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [3.94(8.53)/2.88(0.11)/3.28(3.28)]
+Total time elapsed: 8.037 seconds.
+Step #100, epoch #4, avg. train loss: 15.06765
+Step #200, epoch #9, avg. train loss: 6.94258
+Step #300, epoch #14, avg. train loss: 3.04989
+Step #400, epoch #19, avg. train loss: 1.24054
+Step #500, epoch #23, avg. train loss: 0.34433
+Step #600, epoch #28, avg. train loss: 0.02710
+Step #700, epoch #33, avg. train loss: 0.00109
+Step #800, epoch #38, avg. train loss: 0.00071
+Step #900, epoch #42, avg. train loss: 0.00072
+Step #1000, epoch #47, avg. train loss: 0.00072
+Step #1100, epoch #52, avg. train loss: 0.00071
+Step #1200, epoch #57, avg. train loss: 0.00071
+Step #1300, epoch #61, avg. train loss: 0.00071
+Step #1400, epoch #66, avg. train loss: 0.00071
+Step #1500, epoch #71, avg. train loss: 0.00070
+Step #1600, epoch #76, avg. train loss: 0.00069
+Step #1700, epoch #80, avg. train loss: 0.00070
+Step #1800, epoch #85, avg. train loss: 0.00068
+Step #1900, epoch #90, avg. train loss: 0.00069
+Step #2000, epoch #95, avg. train loss: 0.00069
+Step #2100, epoch #100, avg. train loss: 0.00068
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00069
+Step #2400, epoch #114, avg. train loss: 0.00068
+Step #2500, epoch #119, avg. train loss: 0.00065
+Step #2600, epoch #123, avg. train loss: 0.00066
+Step #2700, epoch #128, avg. train loss: 0.00070
+Step #2800, epoch #133, avg. train loss: 0.00063
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00067
+Step #3100, epoch #147, avg. train loss: 0.00063
+Step #3200, epoch #152, avg. train loss: 0.00068
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00061
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00064
+Step #4800, epoch #228, avg. train loss: 0.00061
+Step #4900, epoch #233, avg. train loss: 0.00062
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00060
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00063
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00060
+Step #5900, epoch #280, avg. train loss: 0.00060
+Step #6000, epoch #285, avg. train loss: 0.00062
+Step #6100, epoch #290, avg. train loss: 0.00061
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00058
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00060
+Step #6900, epoch #328, avg. train loss: 0.00063
+Step #7000, epoch #333, avg. train loss: 0.00058
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.13(2.50)/0.85(0.17)/0.94(0.94)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.41(3.82)/1.07(0.07)/1.17(1.17)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.67(6.96)/2.03(0.17)/2.22(2.22)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.65(9.43)/3.35(0.16)/3.87(3.87)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.17(10.86)/4.53(1.72)/5.15(5.15)]
+Total time elapsed: 10.641 seconds.
+Step #100, epoch #4, avg. train loss: 20.91419
+Step #200, epoch #9, avg. train loss: 8.98146
+Step #300, epoch #14, avg. train loss: 3.55839
+Step #400, epoch #19, avg. train loss: 1.28229
+Step #500, epoch #23, avg. train loss: 0.28353
+Step #600, epoch #28, avg. train loss: 0.00842
+Step #700, epoch #33, avg. train loss: 0.00092
+Step #800, epoch #38, avg. train loss: 0.00089
+Step #900, epoch #42, avg. train loss: 0.00088
+Step #1000, epoch #47, avg. train loss: 0.00090
+Step #1100, epoch #52, avg. train loss: 0.00084
+Step #1200, epoch #57, avg. train loss: 0.00086
+Step #1300, epoch #61, avg. train loss: 0.00088
+Step #1400, epoch #66, avg. train loss: 0.00085
+Step #1500, epoch #71, avg. train loss: 0.00083
+Step #1600, epoch #76, avg. train loss: 0.00081
+Step #1700, epoch #80, avg. train loss: 0.00081
+Step #1800, epoch #85, avg. train loss: 0.00081
+Step #1900, epoch #90, avg. train loss: 0.00077
+Step #2000, epoch #95, avg. train loss: 0.00082
+Step #2100, epoch #100, avg. train loss: 0.00077
+Step #2200, epoch #104, avg. train loss: 0.00078
+Step #2300, epoch #109, avg. train loss: 0.00076
+Step #2400, epoch #114, avg. train loss: 0.00074
+Step #2500, epoch #119, avg. train loss: 0.00078
+Step #2600, epoch #123, avg. train loss: 0.00073
+Step #2700, epoch #128, avg. train loss: 0.00074
+Step #2800, epoch #133, avg. train loss: 0.00068
+Step #2900, epoch #138, avg. train loss: 0.00076
+Step #3000, epoch #142, avg. train loss: 0.00068
+Step #3100, epoch #147, avg. train loss: 0.00071
+Step #3200, epoch #152, avg. train loss: 0.00068
+Step #3300, epoch #157, avg. train loss: 0.00072
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00068
+Step #3600, epoch #171, avg. train loss: 0.00069
+Step #3700, epoch #176, avg. train loss: 0.00068
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00065
+Step #4000, epoch #190, avg. train loss: 0.00066
+Step #4100, epoch #195, avg. train loss: 0.00065
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00066
+Step #4500, epoch #214, avg. train loss: 0.00067
+Step #4600, epoch #219, avg. train loss: 0.00062
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00063
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.97(2.44)/0.74(0.09)/0.81(0.81)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.51(3.89)/1.14(0.10)/1.25(1.25)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.93(6.13)/1.50(0.12)/1.61(1.61)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.83(6.34)/2.58(0.15)/3.19(3.19)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.01(7.85)/2.88(0.25)/3.34(3.34)]
+Total time elapsed: 8.012 seconds.
+Step #100, epoch #4, avg. train loss: 0.93386
+Step #200, epoch #9, avg. train loss: 0.00760
+Step #300, epoch #14, avg. train loss: 0.00098
+Step #400, epoch #19, avg. train loss: 0.00097
+Step #500, epoch #23, avg. train loss: 0.00094
+Step #600, epoch #28, avg. train loss: 0.00093
+Step #700, epoch #33, avg. train loss: 0.00089
+Step #800, epoch #38, avg. train loss: 0.00090
+Step #900, epoch #42, avg. train loss: 0.00086
+Step #1000, epoch #47, avg. train loss: 0.00084
+Step #1100, epoch #52, avg. train loss: 0.00082
+Step #1200, epoch #57, avg. train loss: 0.00081
+Step #1300, epoch #61, avg. train loss: 0.00081
+Step #1400, epoch #66, avg. train loss: 0.00078
+Step #1500, epoch #71, avg. train loss: 0.00076
+Step #1600, epoch #76, avg. train loss: 0.00075
+Step #1700, epoch #80, avg. train loss: 0.00074
+Step #1800, epoch #85, avg. train loss: 0.00070
+Step #1900, epoch #90, avg. train loss: 0.00071
+Step #2000, epoch #95, avg. train loss: 0.00070
+Step #2100, epoch #100, avg. train loss: 0.00068
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00069
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00064
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00064
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00063
+Step #3300, epoch #157, avg. train loss: 0.00062
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00060
+Step #3800, epoch #180, avg. train loss: 0.00062
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00062
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00060
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00064
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00064
+Step #5900, epoch #280, avg. train loss: 0.00060
+Step #6000, epoch #285, avg. train loss: 0.00061
+Step #6100, epoch #290, avg. train loss: 0.00066
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00060
+Step #7000, epoch #333, avg. train loss: 0.00063
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.02(3.80)/1.43(0.09)/1.68(1.68)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.19(8.54)/2.44(0.20)/2.66(2.66)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [6.50(9.53)/4.27(1.05)/5.41(5.41)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [9.23(12.11)/6.03(2.93)/7.69(7.69)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [10.51(17.16)/8.05(5.36)/8.76(8.76)]
+Total time elapsed: 6.351 seconds.
+Step #100, epoch #4, avg. train loss: 43.90327
+Step #200, epoch #9, avg. train loss: 19.43434
+Step #300, epoch #14, avg. train loss: 7.33697
+Step #400, epoch #19, avg. train loss: 1.88353
+Step #500, epoch #23, avg. train loss: 0.09855
+Step #600, epoch #28, avg. train loss: 0.00068
+Step #700, epoch #33, avg. train loss: 0.00064
+Step #800, epoch #38, avg. train loss: 0.00069
+Step #900, epoch #42, avg. train loss: 0.00066
+Step #1000, epoch #47, avg. train loss: 0.00065
+Step #1100, epoch #52, avg. train loss: 0.00067
+Step #1200, epoch #57, avg. train loss: 0.00066
+Step #1300, epoch #61, avg. train loss: 0.00067
+Step #1400, epoch #66, avg. train loss: 0.00066
+Step #1500, epoch #71, avg. train loss: 0.00067
+Step #1600, epoch #76, avg. train loss: 0.00064
+Step #1700, epoch #80, avg. train loss: 0.00067
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00070
+Step #2000, epoch #95, avg. train loss: 0.00063
+Step #2100, epoch #100, avg. train loss: 0.00067
+Step #2200, epoch #104, avg. train loss: 0.00066
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00068
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00065
+Step #2900, epoch #138, avg. train loss: 0.00068
+Step #3000, epoch #142, avg. train loss: 0.00064
+Step #3100, epoch #147, avg. train loss: 0.00066
+Step #3200, epoch #152, avg. train loss: 0.00069
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00066
+Step #3700, epoch #176, avg. train loss: 0.00065
+Step #3800, epoch #180, avg. train loss: 0.00067
+Step #3900, epoch #185, avg. train loss: 0.00065
+Step #4000, epoch #190, avg. train loss: 0.00064
+Step #4100, epoch #195, avg. train loss: 0.00065
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00066
+Step #4400, epoch #209, avg. train loss: 0.00066
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00066
+Step #4700, epoch #223, avg. train loss: 0.00066
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00065
+Step #5100, epoch #242, avg. train loss: 0.00066
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00067
+Step #5400, epoch #257, avg. train loss: 0.00066
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00066
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00066
+Step #6000, epoch #285, avg. train loss: 0.00062
+Step #6100, epoch #290, avg. train loss: 0.00070
+Step #6200, epoch #295, avg. train loss: 0.00063
+Step #6300, epoch #300, avg. train loss: 0.00063
+Step #6400, epoch #304, avg. train loss: 0.00065
+Step #6500, epoch #309, avg. train loss: 0.00066
+Step #6600, epoch #314, avg. train loss: 0.00064
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00069
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.46(3.66)/1.11(0.14)/1.21(1.21)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.25(8.55)/1.77(0.06)/1.87(1.87)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.96(8.86)/2.29(0.19)/2.46(2.46)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.50(10.62)/3.37(0.27)/3.75(3.75)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.06(11.44)/5.06(2.00)/5.88(5.88)]
+Total time elapsed: 7.228 seconds.
+Step #100, epoch #4, avg. train loss: 23.03007
+Step #200, epoch #9, avg. train loss: 10.40025
+Step #300, epoch #14, avg. train loss: 4.31763
+Step #400, epoch #19, avg. train loss: 1.45706
+Step #500, epoch #23, avg. train loss: 0.21580
+Step #600, epoch #28, avg. train loss: 0.00187
+Step #700, epoch #33, avg. train loss: 0.00108
+Step #800, epoch #38, avg. train loss: 0.00102
+Step #900, epoch #42, avg. train loss: 0.00102
+Step #1000, epoch #47, avg. train loss: 0.00103
+Step #1100, epoch #52, avg. train loss: 0.00100
+Step #1200, epoch #57, avg. train loss: 0.00099
+Step #1300, epoch #61, avg. train loss: 0.00098
+Step #1400, epoch #66, avg. train loss: 0.00097
+Step #1500, epoch #71, avg. train loss: 0.00095
+Step #1600, epoch #76, avg. train loss: 0.00092
+Step #1700, epoch #80, avg. train loss: 0.00091
+Step #1800, epoch #85, avg. train loss: 0.00088
+Step #1900, epoch #90, avg. train loss: 0.00088
+Step #2000, epoch #95, avg. train loss: 0.00088
+Step #2100, epoch #100, avg. train loss: 0.00084
+Step #2200, epoch #104, avg. train loss: 0.00082
+Step #2300, epoch #109, avg. train loss: 0.00084
+Step #2400, epoch #114, avg. train loss: 0.00082
+Step #2500, epoch #119, avg. train loss: 0.00076
+Step #2600, epoch #123, avg. train loss: 0.00077
+Step #2700, epoch #128, avg. train loss: 0.00081
+Step #2800, epoch #133, avg. train loss: 0.00072
+Step #2900, epoch #138, avg. train loss: 0.00074
+Step #3000, epoch #142, avg. train loss: 0.00075
+Step #3100, epoch #147, avg. train loss: 0.00070
+Step #3200, epoch #152, avg. train loss: 0.00074
+Step #3300, epoch #157, avg. train loss: 0.00069
+Step #3400, epoch #161, avg. train loss: 0.00070
+Step #3500, epoch #166, avg. train loss: 0.00068
+Step #3600, epoch #171, avg. train loss: 0.00069
+Step #3700, epoch #176, avg. train loss: 0.00067
+Step #3800, epoch #180, avg. train loss: 0.00069
+Step #3900, epoch #185, avg. train loss: 0.00065
+Step #4000, epoch #190, avg. train loss: 0.00069
+Step #4100, epoch #195, avg. train loss: 0.00065
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00066
+Step #4400, epoch #209, avg. train loss: 0.00064
+Step #4500, epoch #214, avg. train loss: 0.00066
+Step #4600, epoch #219, avg. train loss: 0.00063
+Step #4700, epoch #223, avg. train loss: 0.00066
+Step #4800, epoch #228, avg. train loss: 0.00063
+Step #4900, epoch #233, avg. train loss: 0.00063
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00065
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00064
+Step #5600, epoch #266, avg. train loss: 0.00063
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00062
+Step #6200, epoch #295, avg. train loss: 0.00061
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00059
+Step #6600, epoch #314, avg. train loss: 0.00061
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00061
+Step #6900, epoch #328, avg. train loss: 0.00064
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.18(2.86)/0.89(0.06)/0.98(0.98)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.07(4.09)/1.50(0.20)/1.73(1.73)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.56(6.84)/1.95(0.11)/2.13(2.13)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.35(7.57)/2.51(0.37)/2.79(2.79)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.52(7.70)/3.25(1.08)/3.77(3.77)]
+Total time elapsed: 9.728 seconds.
+Step #100, epoch #4, avg. train loss: 13.01586
+Step #200, epoch #9, avg. train loss: 5.90961
+Step #300, epoch #14, avg. train loss: 2.53697
+Step #400, epoch #19, avg. train loss: 1.11041
+Step #500, epoch #23, avg. train loss: 0.45703
+Step #600, epoch #28, avg. train loss: 0.10519
+Step #700, epoch #33, avg. train loss: 0.00765
+Step #800, epoch #38, avg. train loss: 0.00117
+Step #900, epoch #42, avg. train loss: 0.00103
+Step #1000, epoch #47, avg. train loss: 0.00107
+Step #1100, epoch #52, avg. train loss: 0.00101
+Step #1200, epoch #57, avg. train loss: 0.00102
+Step #1300, epoch #61, avg. train loss: 0.00103
+Step #1400, epoch #66, avg. train loss: 0.00101
+Step #1500, epoch #71, avg. train loss: 0.00098
+Step #1600, epoch #76, avg. train loss: 0.00096
+Step #1700, epoch #80, avg. train loss: 0.00095
+Step #1800, epoch #85, avg. train loss: 0.00095
+Step #1900, epoch #90, avg. train loss: 0.00091
+Step #2000, epoch #95, avg. train loss: 0.00094
+Step #2100, epoch #100, avg. train loss: 0.00090
+Step #2200, epoch #104, avg. train loss: 0.00089
+Step #2300, epoch #109, avg. train loss: 0.00087
+Step #2400, epoch #114, avg. train loss: 0.00084
+Step #2500, epoch #119, avg. train loss: 0.00088
+Step #2600, epoch #123, avg. train loss: 0.00083
+Step #2700, epoch #128, avg. train loss: 0.00084
+Step #2800, epoch #133, avg. train loss: 0.00076
+Step #2900, epoch #138, avg. train loss: 0.00083
+Step #3000, epoch #142, avg. train loss: 0.00075
+Step #3100, epoch #147, avg. train loss: 0.00079
+Step #3200, epoch #152, avg. train loss: 0.00075
+Step #3300, epoch #157, avg. train loss: 0.00077
+Step #3400, epoch #161, avg. train loss: 0.00071
+Step #3500, epoch #166, avg. train loss: 0.00074
+Step #3600, epoch #171, avg. train loss: 0.00073
+Step #3700, epoch #176, avg. train loss: 0.00072
+Step #3800, epoch #180, avg. train loss: 0.00069
+Step #3900, epoch #185, avg. train loss: 0.00069
+Step #4000, epoch #190, avg. train loss: 0.00069
+Step #4100, epoch #195, avg. train loss: 0.00068
+Step #4200, epoch #200, avg. train loss: 0.00068
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00069
+Step #4500, epoch #214, avg. train loss: 0.00068
+Step #4600, epoch #219, avg. train loss: 0.00063
+Step #4700, epoch #223, avg. train loss: 0.00062
+Step #4800, epoch #228, avg. train loss: 0.00066
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00065
+Step #5100, epoch #242, avg. train loss: 0.00064
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00063
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.99(1.96)/0.71(0.05)/0.82(0.82)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.77(3.67)/1.30(0.18)/1.48(1.48)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.12(5.49)/2.18(0.27)/2.60(2.60)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.50(6.32)/2.45(0.17)/2.92(2.92)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.19(7.99)/4.26(2.68)/5.16(5.16)]
+Total time elapsed: 10.791 seconds.
+Step #100, epoch #4, avg. train loss: 13.87002
+Step #200, epoch #9, avg. train loss: 6.57214
+Step #300, epoch #14, avg. train loss: 3.00610
+Step #400, epoch #19, avg. train loss: 1.25739
+Step #500, epoch #23, avg. train loss: 0.35134
+Step #600, epoch #28, avg. train loss: 0.03078
+Step #700, epoch #33, avg. train loss: 0.00141
+Step #800, epoch #38, avg. train loss: 0.00082
+Step #900, epoch #42, avg. train loss: 0.00080
+Step #1000, epoch #47, avg. train loss: 0.00078
+Step #1100, epoch #52, avg. train loss: 0.00077
+Step #1200, epoch #57, avg. train loss: 0.00078
+Step #1300, epoch #61, avg. train loss: 0.00076
+Step #1400, epoch #66, avg. train loss: 0.00077
+Step #1500, epoch #71, avg. train loss: 0.00073
+Step #1600, epoch #76, avg. train loss: 0.00073
+Step #1700, epoch #80, avg. train loss: 0.00074
+Step #1800, epoch #85, avg. train loss: 0.00071
+Step #1900, epoch #90, avg. train loss: 0.00072
+Step #2000, epoch #95, avg. train loss: 0.00071
+Step #2100, epoch #100, avg. train loss: 0.00070
+Step #2200, epoch #104, avg. train loss: 0.00068
+Step #2300, epoch #109, avg. train loss: 0.00071
+Step #2400, epoch #114, avg. train loss: 0.00066
+Step #2500, epoch #119, avg. train loss: 0.00067
+Step #2600, epoch #123, avg. train loss: 0.00067
+Step #2700, epoch #128, avg. train loss: 0.00068
+Step #2800, epoch #133, avg. train loss: 0.00064
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00063
+Step #3100, epoch #147, avg. train loss: 0.00065
+Step #3200, epoch #152, avg. train loss: 0.00065
+Step #3300, epoch #157, avg. train loss: 0.00064
+Step #3400, epoch #161, avg. train loss: 0.00062
+Step #3500, epoch #166, avg. train loss: 0.00064
+Step #3600, epoch #171, avg. train loss: 0.00066
+Step #3700, epoch #176, avg. train loss: 0.00061
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00059
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00060
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.08(4.50)/1.54(0.17)/1.73(1.73)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.43(6.09)/2.42(0.38)/2.86(2.86)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.95(7.35)/2.22(0.11)/2.46(2.46)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.64(10.83)/2.81(0.15)/3.03(3.03)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [8.78(12.61)/6.18(3.20)/7.31(7.31)]
+Total time elapsed: 7.183 seconds.
+Step #100, epoch #4, avg. train loss: 26.30300
+Step #200, epoch #9, avg. train loss: 11.26738
+Step #300, epoch #14, avg. train loss: 4.34820
+Step #400, epoch #19, avg. train loss: 1.41063
+Step #500, epoch #23, avg. train loss: 0.21478
+Step #600, epoch #28, avg. train loss: 0.00144
+Step #700, epoch #33, avg. train loss: 0.00065
+Step #800, epoch #38, avg. train loss: 0.00071
+Step #900, epoch #42, avg. train loss: 0.00068
+Step #1000, epoch #47, avg. train loss: 0.00067
+Step #1100, epoch #52, avg. train loss: 0.00069
+Step #1200, epoch #57, avg. train loss: 0.00067
+Step #1300, epoch #61, avg. train loss: 0.00068
+Step #1400, epoch #66, avg. train loss: 0.00068
+Step #1500, epoch #71, avg. train loss: 0.00068
+Step #1600, epoch #76, avg. train loss: 0.00065
+Step #1700, epoch #80, avg. train loss: 0.00068
+Step #1800, epoch #85, avg. train loss: 0.00065
+Step #1900, epoch #90, avg. train loss: 0.00071
+Step #2000, epoch #95, avg. train loss: 0.00064
+Step #2100, epoch #100, avg. train loss: 0.00067
+Step #2200, epoch #104, avg. train loss: 0.00066
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00068
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00065
+Step #2900, epoch #138, avg. train loss: 0.00068
+Step #3000, epoch #142, avg. train loss: 0.00064
+Step #3100, epoch #147, avg. train loss: 0.00066
+Step #3200, epoch #152, avg. train loss: 0.00069
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00066
+Step #3700, epoch #176, avg. train loss: 0.00065
+Step #3800, epoch #180, avg. train loss: 0.00067
+Step #3900, epoch #185, avg. train loss: 0.00065
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00065
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00066
+Step #4400, epoch #209, avg. train loss: 0.00066
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00065
+Step #4700, epoch #223, avg. train loss: 0.00066
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00065
+Step #5100, epoch #242, avg. train loss: 0.00066
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00067
+Step #5400, epoch #257, avg. train loss: 0.00065
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00066
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00066
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00069
+Step #6200, epoch #295, avg. train loss: 0.00063
+Step #6300, epoch #300, avg. train loss: 0.00063
+Step #6400, epoch #304, avg. train loss: 0.00065
+Step #6500, epoch #309, avg. train loss: 0.00065
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00068
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.58(4.59)/1.21(0.07)/1.31(1.31)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.46(6.31)/1.88(0.24)/2.05(2.05)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [5.56(9.36)/3.80(0.35)/4.63(4.63)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.68(11.95)/4.73(0.77)/5.57(5.57)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.89(13.18)/5.74(2.38)/6.58(6.58)]
+Total time elapsed: 7.094 seconds.
+Step #100, epoch #4, avg. train loss: 6.70092
+Step #200, epoch #9, avg. train loss: 0.67900
+Step #300, epoch #14, avg. train loss: 0.00092
+Step #400, epoch #19, avg. train loss: 0.00086
+Step #500, epoch #23, avg. train loss: 0.00083
+Step #600, epoch #28, avg. train loss: 0.00078
+Step #700, epoch #33, avg. train loss: 0.00074
+Step #800, epoch #38, avg. train loss: 0.00071
+Step #900, epoch #42, avg. train loss: 0.00069
+Step #1000, epoch #47, avg. train loss: 0.00069
+Step #1100, epoch #52, avg. train loss: 0.00065
+Step #1200, epoch #57, avg. train loss: 0.00065
+Step #1300, epoch #61, avg. train loss: 0.00064
+Step #1400, epoch #66, avg. train loss: 0.00064
+Step #1500, epoch #71, avg. train loss: 0.00062
+Step #1600, epoch #76, avg. train loss: 0.00062
+Step #1700, epoch #80, avg. train loss: 0.00061
+Step #1800, epoch #85, avg. train loss: 0.00060
+Step #1900, epoch #90, avg. train loss: 0.00061
+Step #2000, epoch #95, avg. train loss: 0.00062
+Step #2100, epoch #100, avg. train loss: 0.00060
+Step #2200, epoch #104, avg. train loss: 0.00059
+Step #2300, epoch #109, avg. train loss: 0.00062
+Step #2400, epoch #114, avg. train loss: 0.00062
+Step #2500, epoch #119, avg. train loss: 0.00057
+Step #2600, epoch #123, avg. train loss: 0.00059
+Step #2700, epoch #128, avg. train loss: 0.00064
+Step #2800, epoch #133, avg. train loss: 0.00057
+Step #2900, epoch #138, avg. train loss: 0.00060
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00057
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00058
+Step #3400, epoch #161, avg. train loss: 0.00060
+Step #3500, epoch #166, avg. train loss: 0.00059
+Step #3600, epoch #171, avg. train loss: 0.00060
+Step #3700, epoch #176, avg. train loss: 0.00059
+Step #3800, epoch #180, avg. train loss: 0.00061
+Step #3900, epoch #185, avg. train loss: 0.00058
+Step #4000, epoch #190, avg. train loss: 0.00061
+Step #4100, epoch #195, avg. train loss: 0.00058
+Step #4200, epoch #200, avg. train loss: 0.00059
+Step #4300, epoch #204, avg. train loss: 0.00060
+Step #4400, epoch #209, avg. train loss: 0.00057
+Step #4500, epoch #214, avg. train loss: 0.00061
+Step #4600, epoch #219, avg. train loss: 0.00057
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00058
+Step #4900, epoch #233, avg. train loss: 0.00059
+Step #5000, epoch #238, avg. train loss: 0.00058
+Step #5100, epoch #242, avg. train loss: 0.00057
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00058
+Step #5400, epoch #257, avg. train loss: 0.00059
+Step #5500, epoch #261, avg. train loss: 0.00059
+Step #5600, epoch #266, avg. train loss: 0.00058
+Step #5700, epoch #271, avg. train loss: 0.00060
+Step #5800, epoch #276, avg. train loss: 0.00057
+Step #5900, epoch #280, avg. train loss: 0.00057
+Step #6000, epoch #285, avg. train loss: 0.00059
+Step #6100, epoch #290, avg. train loss: 0.00059
+Step #6200, epoch #295, avg. train loss: 0.00057
+Step #6300, epoch #300, avg. train loss: 0.00058
+Step #6400, epoch #304, avg. train loss: 0.00059
+Step #6500, epoch #309, avg. train loss: 0.00056
+Step #6600, epoch #314, avg. train loss: 0.00057
+Step #6700, epoch #319, avg. train loss: 0.00059
+Step #6800, epoch #323, avg. train loss: 0.00058
+Step #6900, epoch #328, avg. train loss: 0.00061
+Step #7000, epoch #333, avg. train loss: 0.00057
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.07(2.57)/0.80(0.08)/0.89(0.89)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.06(4.66)/1.54(0.17)/1.72(1.72)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.76(7.21)/2.69(0.27)/3.14(3.14)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.33(8.71)/3.71(0.92)/4.44(4.44)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.28(10.54)/4.72(1.11)/6.07(6.07)]
+Total time elapsed: 7.977 seconds.
+Step #100, epoch #4, avg. train loss: 3.07876
+Step #200, epoch #9, avg. train loss: 0.13408
+Step #300, epoch #14, avg. train loss: 0.00110
+Step #400, epoch #19, avg. train loss: 0.00107
+Step #500, epoch #23, avg. train loss: 0.00105
+Step #600, epoch #28, avg. train loss: 0.00097
+Step #700, epoch #33, avg. train loss: 0.00094
+Step #800, epoch #38, avg. train loss: 0.00091
+Step #900, epoch #42, avg. train loss: 0.00085
+Step #1000, epoch #47, avg. train loss: 0.00086
+Step #1100, epoch #52, avg. train loss: 0.00078
+Step #1200, epoch #57, avg. train loss: 0.00079
+Step #1300, epoch #61, avg. train loss: 0.00078
+Step #1400, epoch #66, avg. train loss: 0.00075
+Step #1500, epoch #71, avg. train loss: 0.00072
+Step #1600, epoch #76, avg. train loss: 0.00070
+Step #1700, epoch #80, avg. train loss: 0.00069
+Step #1800, epoch #85, avg. train loss: 0.00069
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00070
+Step #2100, epoch #100, avg. train loss: 0.00066
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00065
+Step #2400, epoch #114, avg. train loss: 0.00064
+Step #2500, epoch #119, avg. train loss: 0.00068
+Step #2600, epoch #123, avg. train loss: 0.00064
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00067
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00065
+Step #3200, epoch #152, avg. train loss: 0.00063
+Step #3300, epoch #157, avg. train loss: 0.00066
+Step #3400, epoch #161, avg. train loss: 0.00062
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00064
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00064
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00064
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00065
+Step #4500, epoch #214, avg. train loss: 0.00066
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.13(4.02)/0.89(0.09)/0.94(0.94)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.78(5.58)/2.01(0.15)/2.31(2.31)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.68(7.84)/3.30(0.89)/3.90(3.90)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.20(8.11)/4.19(2.39)/5.17(5.17)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [5.86(9.26)/4.20(1.82)/4.89(4.89)]
+Total time elapsed: 11.513 seconds.
+Step #100, epoch #4, avg. train loss: 1.88964
+Step #200, epoch #9, avg. train loss: 0.04141
+Step #300, epoch #14, avg. train loss: 0.00127
+Step #400, epoch #19, avg. train loss: 0.00118
+Step #500, epoch #23, avg. train loss: 0.00109
+Step #600, epoch #28, avg. train loss: 0.00097
+Step #700, epoch #33, avg. train loss: 0.00088
+Step #800, epoch #38, avg. train loss: 0.00086
+Step #900, epoch #42, avg. train loss: 0.00080
+Step #1000, epoch #47, avg. train loss: 0.00077
+Step #1100, epoch #52, avg. train loss: 0.00073
+Step #1200, epoch #57, avg. train loss: 0.00073
+Step #1300, epoch #61, avg. train loss: 0.00072
+Step #1400, epoch #66, avg. train loss: 0.00069
+Step #1500, epoch #71, avg. train loss: 0.00066
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00066
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00063
+Step #2000, epoch #95, avg. train loss: 0.00065
+Step #2100, epoch #100, avg. train loss: 0.00063
+Step #2200, epoch #104, avg. train loss: 0.00063
+Step #2300, epoch #109, avg. train loss: 0.00064
+Step #2400, epoch #114, avg. train loss: 0.00061
+Step #2500, epoch #119, avg. train loss: 0.00061
+Step #2600, epoch #123, avg. train loss: 0.00061
+Step #2700, epoch #128, avg. train loss: 0.00064
+Step #2800, epoch #133, avg. train loss: 0.00059
+Step #2900, epoch #138, avg. train loss: 0.00061
+Step #3000, epoch #142, avg. train loss: 0.00059
+Step #3100, epoch #147, avg. train loss: 0.00062
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00061
+Step #3400, epoch #161, avg. train loss: 0.00059
+Step #3500, epoch #166, avg. train loss: 0.00062
+Step #3600, epoch #171, avg. train loss: 0.00063
+Step #3700, epoch #176, avg. train loss: 0.00059
+Step #3800, epoch #180, avg. train loss: 0.00061
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00062
+Step #4100, epoch #195, avg. train loss: 0.00060
+Step #4200, epoch #200, avg. train loss: 0.00061
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00059
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00058
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00059
+Step #4900, epoch #233, avg. train loss: 0.00063
+Step #5000, epoch #238, avg. train loss: 0.00060
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00059
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00061
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00060
+Step #5700, epoch #271, avg. train loss: 0.00060
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00058
+Step #6000, epoch #285, avg. train loss: 0.00059
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00061
+Step #6900, epoch #328, avg. train loss: 0.00059
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.33(5.32)/1.73(0.09)/1.94(1.94)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.81(6.71)/2.14(0.48)/2.34(2.34)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.54(6.71)/2.52(0.18)/2.95(2.95)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.15(10.78)/4.23(0.18)/5.13(5.13)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [8.35(13.83)/6.02(2.34)/6.96(6.96)]
+Total time elapsed: 10.390 seconds.
+Step #100, epoch #4, avg. train loss: 8.16693
+Step #200, epoch #9, avg. train loss: 1.15529
+Step #300, epoch #14, avg. train loss: 0.00360
+Step #400, epoch #19, avg. train loss: 0.00102
+Step #500, epoch #23, avg. train loss: 0.00099
+Step #600, epoch #28, avg. train loss: 0.00098
+Step #700, epoch #33, avg. train loss: 0.00089
+Step #800, epoch #38, avg. train loss: 0.00092
+Step #900, epoch #42, avg. train loss: 0.00087
+Step #1000, epoch #47, avg. train loss: 0.00085
+Step #1100, epoch #52, avg. train loss: 0.00085
+Step #1200, epoch #57, avg. train loss: 0.00081
+Step #1300, epoch #61, avg. train loss: 0.00080
+Step #1400, epoch #66, avg. train loss: 0.00079
+Step #1500, epoch #71, avg. train loss: 0.00076
+Step #1600, epoch #76, avg. train loss: 0.00072
+Step #1700, epoch #80, avg. train loss: 0.00075
+Step #1800, epoch #85, avg. train loss: 0.00071
+Step #1900, epoch #90, avg. train loss: 0.00075
+Step #2000, epoch #95, avg. train loss: 0.00067
+Step #2100, epoch #100, avg. train loss: 0.00070
+Step #2200, epoch #104, avg. train loss: 0.00068
+Step #2300, epoch #109, avg. train loss: 0.00068
+Step #2400, epoch #114, avg. train loss: 0.00066
+Step #2500, epoch #119, avg. train loss: 0.00068
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00063
+Step #2900, epoch #138, avg. train loss: 0.00065
+Step #3000, epoch #142, avg. train loss: 0.00062
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00066
+Step #3300, epoch #157, avg. train loss: 0.00061
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00061
+Step #3600, epoch #171, avg. train loss: 0.00063
+Step #3700, epoch #176, avg. train loss: 0.00061
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00061
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00062
+Step #4500, epoch #214, avg. train loss: 0.00059
+Step #4600, epoch #219, avg. train loss: 0.00062
+Step #4700, epoch #223, avg. train loss: 0.00062
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00062
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00058
+Step #5300, epoch #252, avg. train loss: 0.00064
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00060
+Step #5600, epoch #266, avg. train loss: 0.00062
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00059
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00059
+Step #6100, epoch #290, avg. train loss: 0.00066
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00060
+Step #6800, epoch #323, avg. train loss: 0.00060
+Step #6900, epoch #328, avg. train loss: 0.00065
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.58(3.62)/1.18(0.07)/1.32(1.32)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.15(5.14)/1.66(0.54)/1.79(1.79)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.64(5.64)/1.94(0.18)/2.20(2.20)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.51(7.29)/2.98(0.12)/3.76(3.76)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.63(12.21)/5.40(1.97)/6.36(6.36)]
+Total time elapsed: 7.493 seconds.
+Step #100, epoch #4, avg. train loss: 5.35625
+Step #200, epoch #9, avg. train loss: 0.49788
+Step #300, epoch #14, avg. train loss: 0.00069
+Step #400, epoch #19, avg. train loss: 0.00071
+Step #500, epoch #23, avg. train loss: 0.00070
+Step #600, epoch #28, avg. train loss: 0.00067
+Step #700, epoch #33, avg. train loss: 0.00069
+Step #800, epoch #38, avg. train loss: 0.00067
+Step #900, epoch #42, avg. train loss: 0.00067
+Step #1000, epoch #47, avg. train loss: 0.00069
+Step #1100, epoch #52, avg. train loss: 0.00067
+Step #1200, epoch #57, avg. train loss: 0.00067
+Step #1300, epoch #61, avg. train loss: 0.00067
+Step #1400, epoch #66, avg. train loss: 0.00067
+Step #1500, epoch #71, avg. train loss: 0.00066
+Step #1600, epoch #76, avg. train loss: 0.00066
+Step #1700, epoch #80, avg. train loss: 0.00066
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00067
+Step #2100, epoch #100, avg. train loss: 0.00065
+Step #2200, epoch #104, avg. train loss: 0.00064
+Step #2300, epoch #109, avg. train loss: 0.00067
+Step #2400, epoch #114, avg. train loss: 0.00066
+Step #2500, epoch #119, avg. train loss: 0.00062
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00069
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00064
+Step #3000, epoch #142, avg. train loss: 0.00066
+Step #3100, epoch #147, avg. train loss: 0.00061
+Step #3200, epoch #152, avg. train loss: 0.00066
+Step #3300, epoch #157, avg. train loss: 0.00062
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00061
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00064
+Step #4800, epoch #228, avg. train loss: 0.00062
+Step #4900, epoch #233, avg. train loss: 0.00062
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00061
+Step #5200, epoch #247, avg. train loss: 0.00064
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00063
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00062
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00061
+Step #5900, epoch #280, avg. train loss: 0.00061
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00062
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00059
+Step #6600, epoch #314, avg. train loss: 0.00061
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00061
+Step #6900, epoch #328, avg. train loss: 0.00064
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.05(2.72)/0.80(0.06)/0.88(0.88)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.07(6.58)/1.61(0.09)/1.72(1.72)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.73(7.75)/2.77(0.55)/3.11(3.11)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.08(9.15)/4.12(1.26)/5.06(5.06)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.90(10.26)/4.51(0.88)/5.75(5.75)]
+Total time elapsed: 7.121 seconds.
+Step #100, epoch #4, avg. train loss: 2.90175
+Step #200, epoch #9, avg. train loss: 0.13223
+Step #300, epoch #14, avg. train loss: 0.00092
+Step #400, epoch #19, avg. train loss: 0.00093
+Step #500, epoch #23, avg. train loss: 0.00089
+Step #600, epoch #28, avg. train loss: 0.00085
+Step #700, epoch #33, avg. train loss: 0.00081
+Step #800, epoch #38, avg. train loss: 0.00080
+Step #900, epoch #42, avg. train loss: 0.00076
+Step #1000, epoch #47, avg. train loss: 0.00078
+Step #1100, epoch #52, avg. train loss: 0.00072
+Step #1200, epoch #57, avg. train loss: 0.00072
+Step #1300, epoch #61, avg. train loss: 0.00072
+Step #1400, epoch #66, avg. train loss: 0.00070
+Step #1500, epoch #71, avg. train loss: 0.00070
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00066
+Step #1800, epoch #85, avg. train loss: 0.00067
+Step #1900, epoch #90, avg. train loss: 0.00064
+Step #2000, epoch #95, avg. train loss: 0.00067
+Step #2100, epoch #100, avg. train loss: 0.00065
+Step #2200, epoch #104, avg. train loss: 0.00065
+Step #2300, epoch #109, avg. train loss: 0.00064
+Step #2400, epoch #114, avg. train loss: 0.00062
+Step #2500, epoch #119, avg. train loss: 0.00067
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00065
+Step #2800, epoch #133, avg. train loss: 0.00060
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00064
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00064
+Step #3800, epoch #180, avg. train loss: 0.00062
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00061
+Step #4400, epoch #209, avg. train loss: 0.00065
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00063
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00062
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00062
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.95(2.88)/0.73(0.06)/0.79(0.79)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.53(4.40)/1.18(0.08)/1.27(1.27)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.38(5.06)/1.09(0.11)/1.15(1.15)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [1.66(5.31)/1.29(0.08)/1.38(1.38)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [3.39(6.84)/2.47(0.29)/2.83(2.83)]
+Total time elapsed: 10.393 seconds.
+Step #100, epoch #4, avg. train loss: 0.47328
+Step #200, epoch #9, avg. train loss: 0.00259
+Step #300, epoch #14, avg. train loss: 0.00103
+Step #400, epoch #19, avg. train loss: 0.00100
+Step #500, epoch #23, avg. train loss: 0.00095
+Step #600, epoch #28, avg. train loss: 0.00092
+Step #700, epoch #33, avg. train loss: 0.00086
+Step #800, epoch #38, avg. train loss: 0.00086
+Step #900, epoch #42, avg. train loss: 0.00081
+Step #1000, epoch #47, avg. train loss: 0.00078
+Step #1100, epoch #52, avg. train loss: 0.00075
+Step #1200, epoch #57, avg. train loss: 0.00074
+Step #1300, epoch #61, avg. train loss: 0.00073
+Step #1400, epoch #66, avg. train loss: 0.00071
+Step #1500, epoch #71, avg. train loss: 0.00068
+Step #1600, epoch #76, avg. train loss: 0.00069
+Step #1700, epoch #80, avg. train loss: 0.00068
+Step #1800, epoch #85, avg. train loss: 0.00065
+Step #1900, epoch #90, avg. train loss: 0.00066
+Step #2000, epoch #95, avg. train loss: 0.00066
+Step #2100, epoch #100, avg. train loss: 0.00064
+Step #2200, epoch #104, avg. train loss: 0.00064
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00063
+Step #2500, epoch #119, avg. train loss: 0.00062
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00063
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00063
+Step #3200, epoch #152, avg. train loss: 0.00063
+Step #3300, epoch #157, avg. train loss: 0.00062
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00060
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00060
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00060
+Step #6800, epoch #323, avg. train loss: 0.00061
+Step #6900, epoch #328, avg. train loss: 0.00058
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.71(3.89)/1.27(0.07)/1.42(1.42)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.97(7.10)/2.23(0.20)/2.48(2.48)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.07(7.97)/2.35(0.33)/2.56(2.56)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.46(9.94)/3.93(0.86)/4.55(4.55)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.88(12.98)/4.95(0.80)/5.73(5.73)]
+Total time elapsed: 7.776 seconds.
+Step #100, epoch #4, avg. train loss: 6.47279
+Step #200, epoch #9, avg. train loss: 0.67066
+Step #300, epoch #14, avg. train loss: 0.00084
+Step #400, epoch #19, avg. train loss: 0.00077
+Step #500, epoch #23, avg. train loss: 0.00076
+Step #600, epoch #28, avg. train loss: 0.00076
+Step #700, epoch #33, avg. train loss: 0.00071
+Step #800, epoch #38, avg. train loss: 0.00076
+Step #900, epoch #42, avg. train loss: 0.00073
+Step #1000, epoch #47, avg. train loss: 0.00071
+Step #1100, epoch #52, avg. train loss: 0.00073
+Step #1200, epoch #57, avg. train loss: 0.00070
+Step #1300, epoch #61, avg. train loss: 0.00071
+Step #1400, epoch #66, avg. train loss: 0.00071
+Step #1500, epoch #71, avg. train loss: 0.00070
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00070
+Step #1800, epoch #85, avg. train loss: 0.00067
+Step #1900, epoch #90, avg. train loss: 0.00072
+Step #2000, epoch #95, avg. train loss: 0.00065
+Step #2100, epoch #100, avg. train loss: 0.00068
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00067
+Step #2400, epoch #114, avg. train loss: 0.00066
+Step #2500, epoch #119, avg. train loss: 0.00069
+Step #2600, epoch #123, avg. train loss: 0.00066
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00066
+Step #2900, epoch #138, avg. train loss: 0.00069
+Step #3000, epoch #142, avg. train loss: 0.00065
+Step #3100, epoch #147, avg. train loss: 0.00067
+Step #3200, epoch #152, avg. train loss: 0.00069
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00066
+Step #3600, epoch #171, avg. train loss: 0.00067
+Step #3700, epoch #176, avg. train loss: 0.00066
+Step #3800, epoch #180, avg. train loss: 0.00068
+Step #3900, epoch #185, avg. train loss: 0.00066
+Step #4000, epoch #190, avg. train loss: 0.00066
+Step #4100, epoch #195, avg. train loss: 0.00066
+Step #4200, epoch #200, avg. train loss: 0.00067
+Step #4300, epoch #204, avg. train loss: 0.00067
+Step #4400, epoch #209, avg. train loss: 0.00067
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00067
+Step #4700, epoch #223, avg. train loss: 0.00067
+Step #4800, epoch #228, avg. train loss: 0.00065
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00067
+Step #5100, epoch #242, avg. train loss: 0.00068
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00069
+Step #5400, epoch #257, avg. train loss: 0.00068
+Step #5500, epoch #261, avg. train loss: 0.00065
+Step #5600, epoch #266, avg. train loss: 0.00068
+Step #5700, epoch #271, avg. train loss: 0.00065
+Step #5800, epoch #276, avg. train loss: 0.00065
+Step #5900, epoch #280, avg. train loss: 0.00068
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00072
+Step #6200, epoch #295, avg. train loss: 0.00065
+Step #6300, epoch #300, avg. train loss: 0.00065
+Step #6400, epoch #304, avg. train loss: 0.00068
+Step #6500, epoch #309, avg. train loss: 0.00068
+Step #6600, epoch #314, avg. train loss: 0.00066
+Step #6700, epoch #319, avg. train loss: 0.00065
+Step #6800, epoch #323, avg. train loss: 0.00066
+Step #6900, epoch #328, avg. train loss: 0.00071
+Step #7000, epoch #333, avg. train loss: 0.00065
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.53(4.09)/1.16(0.06)/1.27(1.27)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.27(8.15)/1.79(0.22)/1.89(1.89)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.49(8.86)/1.97(0.33)/2.08(2.08)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [2.39(9.89)/1.89(0.12)/1.99(1.99)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.89(9.90)/3.55(0.35)/4.07(4.07)]
+Total time elapsed: 6.316 seconds.
+Step #100, epoch #4, avg. train loss: 18.74407
+Step #200, epoch #9, avg. train loss: 8.60507
+Step #300, epoch #14, avg. train loss: 3.57390
+Step #400, epoch #19, avg. train loss: 1.32017
+Step #500, epoch #23, avg. train loss: 0.28355
+Step #600, epoch #28, avg. train loss: 0.00824
+Step #700, epoch #33, avg. train loss: 0.00069
+Step #800, epoch #38, avg. train loss: 0.00066
+Step #900, epoch #42, avg. train loss: 0.00066
+Step #1000, epoch #47, avg. train loss: 0.00067
+Step #1100, epoch #52, avg. train loss: 0.00066
+Step #1200, epoch #57, avg. train loss: 0.00066
+Step #1300, epoch #61, avg. train loss: 0.00066
+Step #1400, epoch #66, avg. train loss: 0.00067
+Step #1500, epoch #71, avg. train loss: 0.00065
+Step #1600, epoch #76, avg. train loss: 0.00065
+Step #1700, epoch #80, avg. train loss: 0.00065
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00066
+Step #2100, epoch #100, avg. train loss: 0.00064
+Step #2200, epoch #104, avg. train loss: 0.00063
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00061
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00068
+Step #2800, epoch #133, avg. train loss: 0.00060
+Step #2900, epoch #138, avg. train loss: 0.00064
+Step #3000, epoch #142, avg. train loss: 0.00065
+Step #3100, epoch #147, avg. train loss: 0.00061
+Step #3200, epoch #152, avg. train loss: 0.00066
+Step #3300, epoch #157, avg. train loss: 0.00062
+Step #3400, epoch #161, avg. train loss: 0.00063
+Step #3500, epoch #166, avg. train loss: 0.00062
+Step #3600, epoch #171, avg. train loss: 0.00063
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00060
+Step #4700, epoch #223, avg. train loss: 0.00063
+Step #4800, epoch #228, avg. train loss: 0.00061
+Step #4900, epoch #233, avg. train loss: 0.00061
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00059
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00061
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00062
+Step #5800, epoch #276, avg. train loss: 0.00059
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00061
+Step #6100, epoch #290, avg. train loss: 0.00060
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00057
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00059
+Step #6900, epoch #328, avg. train loss: 0.00062
+Step #7000, epoch #333, avg. train loss: 0.00058
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.22(2.94)/0.92(0.06)/1.02(1.02)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.68(5.33)/1.31(0.10)/1.40(1.40)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.41(8.41)/2.57(0.16)/2.85(2.85)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.05(8.45)/3.38(0.05)/4.21(4.21)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [7.51(9.64)/4.54(1.61)/6.26(6.26)]
+Total time elapsed: 7.201 seconds.
+Step #100, epoch #4, avg. train loss: 2.31762
+Step #200, epoch #9, avg. train loss: 0.08829
+Step #300, epoch #14, avg. train loss: 0.00136
+Step #400, epoch #19, avg. train loss: 0.00133
+Step #500, epoch #23, avg. train loss: 0.00130
+Step #600, epoch #28, avg. train loss: 0.00121
+Step #700, epoch #33, avg. train loss: 0.00113
+Step #800, epoch #38, avg. train loss: 0.00107
+Step #900, epoch #42, avg. train loss: 0.00101
+Step #1000, epoch #47, avg. train loss: 0.00099
+Step #1100, epoch #52, avg. train loss: 0.00092
+Step #1200, epoch #57, avg. train loss: 0.00090
+Step #1300, epoch #61, avg. train loss: 0.00087
+Step #1400, epoch #66, avg. train loss: 0.00085
+Step #1500, epoch #71, avg. train loss: 0.00080
+Step #1600, epoch #76, avg. train loss: 0.00077
+Step #1700, epoch #80, avg. train loss: 0.00075
+Step #1800, epoch #85, avg. train loss: 0.00075
+Step #1900, epoch #90, avg. train loss: 0.00071
+Step #2000, epoch #95, avg. train loss: 0.00073
+Step #2100, epoch #100, avg. train loss: 0.00070
+Step #2200, epoch #104, avg. train loss: 0.00070
+Step #2300, epoch #109, avg. train loss: 0.00068
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00070
+Step #2600, epoch #123, avg. train loss: 0.00066
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00068
+Step #3000, epoch #142, avg. train loss: 0.00062
+Step #3100, epoch #147, avg. train loss: 0.00066
+Step #3200, epoch #152, avg. train loss: 0.00063
+Step #3300, epoch #157, avg. train loss: 0.00066
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00064
+Step #3800, epoch #180, avg. train loss: 0.00062
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00064
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00065
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00063
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00065
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00064
+Step #6500, epoch #309, avg. train loss: 0.00064
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00063
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.28(2.40)/0.90(0.06)/1.07(1.07)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.14(4.12)/1.52(0.07)/1.78(1.78)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.11(7.32)/2.32(0.12)/2.59(2.59)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.14(8.24)/4.07(1.93)/5.11(5.11)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [9.02(9.70)/5.15(4.08)/7.52(7.52)]
+Total time elapsed: 9.984 seconds.
+Step #100, epoch #4, avg. train loss: 17.97020
+Step #200, epoch #9, avg. train loss: 8.14276
+Step #300, epoch #14, avg. train loss: 3.48750
+Step #400, epoch #19, avg. train loss: 1.32066
+Step #500, epoch #23, avg. train loss: 0.28952
+Step #600, epoch #28, avg. train loss: 0.00985
+Step #700, epoch #33, avg. train loss: 0.00070
+Step #800, epoch #38, avg. train loss: 0.00067
+Step #900, epoch #42, avg. train loss: 0.00066
+Step #1000, epoch #47, avg. train loss: 0.00065
+Step #1100, epoch #52, avg. train loss: 0.00066
+Step #1200, epoch #57, avg. train loss: 0.00066
+Step #1300, epoch #61, avg. train loss: 0.00067
+Step #1400, epoch #66, avg. train loss: 0.00067
+Step #1500, epoch #71, avg. train loss: 0.00064
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00067
+Step #1800, epoch #85, avg. train loss: 0.00065
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00065
+Step #2100, epoch #100, avg. train loss: 0.00065
+Step #2200, epoch #104, avg. train loss: 0.00065
+Step #2300, epoch #109, avg. train loss: 0.00067
+Step #2400, epoch #114, avg. train loss: 0.00063
+Step #2500, epoch #119, avg. train loss: 0.00064
+Step #2600, epoch #123, avg. train loss: 0.00064
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00062
+Step #2900, epoch #138, avg. train loss: 0.00064
+Step #3000, epoch #142, avg. train loss: 0.00062
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00064
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00061
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00060
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00060
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00059
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.79(5.16)/1.38(0.08)/1.49(1.49)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.17(7.10)/1.69(0.08)/1.81(1.81)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.48(12.22)/3.42(0.14)/3.74(3.74)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [6.62(13.84)/5.02(1.78)/5.52(5.52)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [11.02(16.34)/7.93(4.30)/9.18(9.18)]
+Total time elapsed: 5.874 seconds.
+Step #100, epoch #4, avg. train loss: 12.96965
+Step #200, epoch #9, avg. train loss: 2.17172
+Step #300, epoch #14, avg. train loss: 0.02598
+Step #400, epoch #19, avg. train loss: 0.00084
+Step #500, epoch #23, avg. train loss: 0.00081
+Step #600, epoch #28, avg. train loss: 0.00081
+Step #700, epoch #33, avg. train loss: 0.00076
+Step #800, epoch #38, avg. train loss: 0.00080
+Step #900, epoch #42, avg. train loss: 0.00077
+Step #1000, epoch #47, avg. train loss: 0.00073
+Step #1100, epoch #52, avg. train loss: 0.00075
+Step #1200, epoch #57, avg. train loss: 0.00072
+Step #1300, epoch #61, avg. train loss: 0.00072
+Step #1400, epoch #66, avg. train loss: 0.00070
+Step #1500, epoch #71, avg. train loss: 0.00070
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00069
+Step #1800, epoch #85, avg. train loss: 0.00066
+Step #1900, epoch #90, avg. train loss: 0.00071
+Step #2000, epoch #95, avg. train loss: 0.00064
+Step #2100, epoch #100, avg. train loss: 0.00066
+Step #2200, epoch #104, avg. train loss: 0.00065
+Step #2300, epoch #109, avg. train loss: 0.00065
+Step #2400, epoch #114, avg. train loss: 0.00064
+Step #2500, epoch #119, avg. train loss: 0.00067
+Step #2600, epoch #123, avg. train loss: 0.00064
+Step #2700, epoch #128, avg. train loss: 0.00065
+Step #2800, epoch #133, avg. train loss: 0.00063
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00063
+Step #3100, epoch #147, avg. train loss: 0.00065
+Step #3200, epoch #152, avg. train loss: 0.00067
+Step #3300, epoch #157, avg. train loss: 0.00062
+Step #3400, epoch #161, avg. train loss: 0.00062
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00064
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00064
+Step #4500, epoch #214, avg. train loss: 0.00061
+Step #4600, epoch #219, avg. train loss: 0.00064
+Step #4700, epoch #223, avg. train loss: 0.00064
+Step #4800, epoch #228, avg. train loss: 0.00062
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00064
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00066
+Step #5400, epoch #257, avg. train loss: 0.00065
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00062
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00065
+Step #6000, epoch #285, avg. train loss: 0.00061
+Step #6100, epoch #290, avg. train loss: 0.00069
+Step #6200, epoch #295, avg. train loss: 0.00062
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00064
+Step #6500, epoch #309, avg. train loss: 0.00065
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00068
+Step #7000, epoch #333, avg. train loss: 0.00061
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.22(2.52)/0.88(0.04)/1.02(1.02)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.99(6.09)/2.17(0.14)/2.49(2.49)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.72(9.23)/3.39(0.27)/3.93(3.93)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [8.09(12.22)/5.79(2.88)/6.74(6.74)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [11.52(14.45)/7.84(5.15)/9.60(9.60)]
+Total time elapsed: 7.314 seconds.
+Step #100, epoch #4, avg. train loss: 8.93121
+Step #200, epoch #9, avg. train loss: 1.13395
+Step #300, epoch #14, avg. train loss: 0.00283
+Step #400, epoch #19, avg. train loss: 0.00167
+Step #500, epoch #23, avg. train loss: 0.00155
+Step #600, epoch #28, avg. train loss: 0.00154
+Step #700, epoch #33, avg. train loss: 0.00144
+Step #800, epoch #38, avg. train loss: 0.00135
+Step #900, epoch #42, avg. train loss: 0.00136
+Step #1000, epoch #47, avg. train loss: 0.00127
+Step #1100, epoch #52, avg. train loss: 0.00120
+Step #1200, epoch #57, avg. train loss: 0.00118
+Step #1300, epoch #61, avg. train loss: 0.00110
+Step #1400, epoch #66, avg. train loss: 0.00110
+Step #1500, epoch #71, avg. train loss: 0.00102
+Step #1600, epoch #76, avg. train loss: 0.00098
+Step #1700, epoch #80, avg. train loss: 0.00095
+Step #1800, epoch #85, avg. train loss: 0.00091
+Step #1900, epoch #90, avg. train loss: 0.00087
+Step #2000, epoch #95, avg. train loss: 0.00085
+Step #2100, epoch #100, avg. train loss: 0.00082
+Step #2200, epoch #104, avg. train loss: 0.00078
+Step #2300, epoch #109, avg. train loss: 0.00079
+Step #2400, epoch #114, avg. train loss: 0.00075
+Step #2500, epoch #119, avg. train loss: 0.00071
+Step #2600, epoch #123, avg. train loss: 0.00071
+Step #2700, epoch #128, avg. train loss: 0.00074
+Step #2800, epoch #133, avg. train loss: 0.00064
+Step #2900, epoch #138, avg. train loss: 0.00068
+Step #3000, epoch #142, avg. train loss: 0.00069
+Step #3100, epoch #147, avg. train loss: 0.00063
+Step #3200, epoch #152, avg. train loss: 0.00068
+Step #3300, epoch #157, avg. train loss: 0.00064
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00063
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00061
+Step #4000, epoch #190, avg. train loss: 0.00065
+Step #4100, epoch #195, avg. train loss: 0.00062
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00064
+Step #4800, epoch #228, avg. train loss: 0.00061
+Step #4900, epoch #233, avg. train loss: 0.00062
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00060
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00062
+Step #5400, epoch #257, avg. train loss: 0.00063
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00062
+Step #5700, epoch #271, avg. train loss: 0.00063
+Step #5800, epoch #276, avg. train loss: 0.00060
+Step #5900, epoch #280, avg. train loss: 0.00061
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00062
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00063
+Step #6500, epoch #309, avg. train loss: 0.00059
+Step #6600, epoch #314, avg. train loss: 0.00061
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00061
+Step #6900, epoch #328, avg. train loss: 0.00064
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.04(2.81)/0.80(0.07)/0.87(0.87)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.15(7.09)/1.67(0.08)/1.79(1.79)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.74(7.28)/2.74(0.61)/3.11(3.11)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.45(9.47)/3.82(0.62)/4.54(4.54)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.67(11.03)/4.69(1.27)/5.56(5.56)]
+Total time elapsed: 7.615 seconds.
+Step #100, epoch #4, avg. train loss: 21.95750
+Step #200, epoch #9, avg. train loss: 10.02150
+Step #300, epoch #14, avg. train loss: 4.05090
+Step #400, epoch #19, avg. train loss: 1.39008
+Step #500, epoch #23, avg. train loss: 0.24296
+Step #600, epoch #28, avg. train loss: 0.00315
+Step #700, epoch #33, avg. train loss: 0.00099
+Step #800, epoch #38, avg. train loss: 0.00099
+Step #900, epoch #42, avg. train loss: 0.00096
+Step #1000, epoch #47, avg. train loss: 0.00098
+Step #1100, epoch #52, avg. train loss: 0.00092
+Step #1200, epoch #57, avg. train loss: 0.00093
+Step #1300, epoch #61, avg. train loss: 0.00093
+Step #1400, epoch #66, avg. train loss: 0.00087
+Step #1500, epoch #71, avg. train loss: 0.00083
+Step #1600, epoch #76, avg. train loss: 0.00078
+Step #1700, epoch #80, avg. train loss: 0.00075
+Step #1800, epoch #85, avg. train loss: 0.00074
+Step #1900, epoch #90, avg. train loss: 0.00070
+Step #2000, epoch #95, avg. train loss: 0.00074
+Step #2100, epoch #100, avg. train loss: 0.00069
+Step #2200, epoch #104, avg. train loss: 0.00070
+Step #2300, epoch #109, avg. train loss: 0.00068
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00069
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00065
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00067
+Step #3000, epoch #142, avg. train loss: 0.00061
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00060
+Step #3500, epoch #166, avg. train loss: 0.00062
+Step #3600, epoch #171, avg. train loss: 0.00063
+Step #3700, epoch #176, avg. train loss: 0.00062
+Step #3800, epoch #180, avg. train loss: 0.00060
+Step #3900, epoch #185, avg. train loss: 0.00060
+Step #4000, epoch #190, avg. train loss: 0.00061
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00061
+Step #4300, epoch #204, avg. train loss: 0.00059
+Step #4400, epoch #209, avg. train loss: 0.00062
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00058
+Step #4700, epoch #223, avg. train loss: 0.00057
+Step #4800, epoch #228, avg. train loss: 0.00061
+Step #4900, epoch #233, avg. train loss: 0.00063
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00060
+Step #5200, epoch #247, avg. train loss: 0.00058
+Step #5300, epoch #252, avg. train loss: 0.00060
+Step #5400, epoch #257, avg. train loss: 0.00061
+Step #5500, epoch #261, avg. train loss: 0.00058
+Step #5600, epoch #266, avg. train loss: 0.00060
+Step #5700, epoch #271, avg. train loss: 0.00060
+Step #5800, epoch #276, avg. train loss: 0.00058
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00061
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00058
+Step #6400, epoch #304, avg. train loss: 0.00059
+Step #6500, epoch #309, avg. train loss: 0.00059
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00058
+Step #6800, epoch #323, avg. train loss: 0.00060
+Step #6900, epoch #328, avg. train loss: 0.00058
+Step #7000, epoch #333, avg. train loss: 0.00057
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.97(2.39)/0.73(0.06)/0.81(0.81)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.98(5.39)/1.52(0.14)/1.65(1.65)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.95(6.40)/2.17(0.12)/2.46(2.46)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.58(6.72)/2.52(0.10)/2.98(2.98)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.31(7.48)/3.19(1.44)/3.59(3.59)]
+Total time elapsed: 4.066 seconds.
+Step #100, epoch #4, avg. train loss: 0.74251
+Step #200, epoch #9, avg. train loss: 0.00523
+Step #300, epoch #14, avg. train loss: 0.00142
+Step #400, epoch #19, avg. train loss: 0.00141
+Step #500, epoch #23, avg. train loss: 0.00135
+Step #600, epoch #28, avg. train loss: 0.00131
+Step #700, epoch #33, avg. train loss: 0.00123
+Step #800, epoch #38, avg. train loss: 0.00127
+Step #900, epoch #42, avg. train loss: 0.00119
+Step #1000, epoch #47, avg. train loss: 0.00112
+Step #1100, epoch #52, avg. train loss: 0.00108
+Step #1200, epoch #57, avg. train loss: 0.00106
+Step #1300, epoch #61, avg. train loss: 0.00102
+Step #1400, epoch #66, avg. train loss: 0.00096
+Step #1500, epoch #71, avg. train loss: 0.00094
+Step #1600, epoch #76, avg. train loss: 0.00090
+Step #1700, epoch #80, avg. train loss: 0.00088
+Step #1800, epoch #85, avg. train loss: 0.00082
+Step #1900, epoch #90, avg. train loss: 0.00083
+Step #2000, epoch #95, avg. train loss: 0.00078
+Step #2100, epoch #100, avg. train loss: 0.00076
+Step #2200, epoch #104, avg. train loss: 0.00073
+Step #2300, epoch #109, avg. train loss: 0.00074
+Step #2400, epoch #114, avg. train loss: 0.00069
+Step #2500, epoch #119, avg. train loss: 0.00068
+Step #2600, epoch #123, avg. train loss: 0.00068
+Step #2700, epoch #128, avg. train loss: 0.00069
+Step #2800, epoch #133, avg. train loss: 0.00064
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00063
+Step #3100, epoch #147, avg. train loss: 0.00065
+Step #3200, epoch #152, avg. train loss: 0.00064
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00064
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00060
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00061
+Step #4200, epoch #200, avg. train loss: 0.00062
+Step #4300, epoch #204, avg. train loss: 0.00063
+Step #4400, epoch #209, avg. train loss: 0.00060
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00059
+Step #4700, epoch #223, avg. train loss: 0.00061
+Step #4800, epoch #228, avg. train loss: 0.00060
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00061
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00060
+Step #7000, epoch #333, avg. train loss: 0.00063
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.94(4.58)/1.44(0.05)/1.61(1.61)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.47(6.14)/2.42(0.26)/2.89(2.89)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [8.00(12.82)/5.60(1.76)/6.67(6.67)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [13.17(18.59)/9.85(7.07)/10.98(10.98)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [14.64(18.66)/10.39(7.41)/12.20(12.20)]
+Total time elapsed: 6.699 seconds.
+Step #100, epoch #4, avg. train loss: 18.82386
+Step #200, epoch #9, avg. train loss: 3.77875
+Step #300, epoch #14, avg. train loss: 0.11339
+Step #400, epoch #19, avg. train loss: 0.00095
+Step #500, epoch #23, avg. train loss: 0.00092
+Step #600, epoch #28, avg. train loss: 0.00092
+Step #700, epoch #33, avg. train loss: 0.00085
+Step #800, epoch #38, avg. train loss: 0.00090
+Step #900, epoch #42, avg. train loss: 0.00088
+Step #1000, epoch #47, avg. train loss: 0.00084
+Step #1100, epoch #52, avg. train loss: 0.00085
+Step #1200, epoch #57, avg. train loss: 0.00082
+Step #1300, epoch #61, avg. train loss: 0.00082
+Step #1400, epoch #66, avg. train loss: 0.00080
+Step #1500, epoch #71, avg. train loss: 0.00079
+Step #1600, epoch #76, avg. train loss: 0.00076
+Step #1700, epoch #80, avg. train loss: 0.00078
+Step #1800, epoch #85, avg. train loss: 0.00074
+Step #1900, epoch #90, avg. train loss: 0.00078
+Step #2000, epoch #95, avg. train loss: 0.00072
+Step #2100, epoch #100, avg. train loss: 0.00073
+Step #2200, epoch #104, avg. train loss: 0.00071
+Step #2300, epoch #109, avg. train loss: 0.00072
+Step #2400, epoch #114, avg. train loss: 0.00070
+Step #2500, epoch #119, avg. train loss: 0.00072
+Step #2600, epoch #123, avg. train loss: 0.00069
+Step #2700, epoch #128, avg. train loss: 0.00069
+Step #2800, epoch #133, avg. train loss: 0.00068
+Step #2900, epoch #138, avg. train loss: 0.00071
+Step #3000, epoch #142, avg. train loss: 0.00067
+Step #3100, epoch #147, avg. train loss: 0.00069
+Step #3200, epoch #152, avg. train loss: 0.00070
+Step #3300, epoch #157, avg. train loss: 0.00066
+Step #3400, epoch #161, avg. train loss: 0.00065
+Step #3500, epoch #166, avg. train loss: 0.00066
+Step #3600, epoch #171, avg. train loss: 0.00067
+Step #3700, epoch #176, avg. train loss: 0.00067
+Step #3800, epoch #180, avg. train loss: 0.00068
+Step #3900, epoch #185, avg. train loss: 0.00066
+Step #4000, epoch #190, avg. train loss: 0.00066
+Step #4100, epoch #195, avg. train loss: 0.00066
+Step #4200, epoch #200, avg. train loss: 0.00068
+Step #4300, epoch #204, avg. train loss: 0.00068
+Step #4400, epoch #209, avg. train loss: 0.00067
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00067
+Step #4700, epoch #223, avg. train loss: 0.00067
+Step #4800, epoch #228, avg. train loss: 0.00066
+Step #4900, epoch #233, avg. train loss: 0.00067
+Step #5000, epoch #238, avg. train loss: 0.00067
+Step #5100, epoch #242, avg. train loss: 0.00068
+Step #5200, epoch #247, avg. train loss: 0.00063
+Step #5300, epoch #252, avg. train loss: 0.00070
+Step #5400, epoch #257, avg. train loss: 0.00068
+Step #5500, epoch #261, avg. train loss: 0.00066
+Step #5600, epoch #266, avg. train loss: 0.00068
+Step #5700, epoch #271, avg. train loss: 0.00066
+Step #5800, epoch #276, avg. train loss: 0.00066
+Step #5900, epoch #280, avg. train loss: 0.00068
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00073
+Step #6200, epoch #295, avg. train loss: 0.00066
+Step #6300, epoch #300, avg. train loss: 0.00065
+Step #6400, epoch #304, avg. train loss: 0.00068
+Step #6500, epoch #309, avg. train loss: 0.00069
+Step #6600, epoch #314, avg. train loss: 0.00067
+Step #6700, epoch #319, avg. train loss: 0.00065
+Step #6800, epoch #323, avg. train loss: 0.00067
+Step #6900, epoch #328, avg. train loss: 0.00071
+Step #7000, epoch #333, avg. train loss: 0.00064
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.12(2.86)/0.85(0.07)/0.93(0.93)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.85(5.23)/1.43(0.24)/1.54(1.54)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [1.88(7.71)/1.49(0.14)/1.57(1.57)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.36(7.76)/2.50(0.12)/2.80(2.80)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [5.29(13.00)/4.00(0.40)/4.41(4.41)]
+Total time elapsed: 5.843 seconds.
+Step #100, epoch #4, avg. train loss: 28.14314
+Step #200, epoch #9, avg. train loss: 12.70085
+Step #300, epoch #14, avg. train loss: 5.10801
+Step #400, epoch #19, avg. train loss: 1.57574
+Step #500, epoch #23, avg. train loss: 0.17048
+Step #600, epoch #28, avg. train loss: 0.00071
+Step #700, epoch #33, avg. train loss: 0.00071
+Step #800, epoch #38, avg. train loss: 0.00068
+Step #900, epoch #42, avg. train loss: 0.00069
+Step #1000, epoch #47, avg. train loss: 0.00070
+Step #1100, epoch #52, avg. train loss: 0.00068
+Step #1200, epoch #57, avg. train loss: 0.00070
+Step #1300, epoch #61, avg. train loss: 0.00069
+Step #1400, epoch #66, avg. train loss: 0.00069
+Step #1500, epoch #71, avg. train loss: 0.00068
+Step #1600, epoch #76, avg. train loss: 0.00069
+Step #1700, epoch #80, avg. train loss: 0.00068
+Step #1800, epoch #85, avg. train loss: 0.00067
+Step #1900, epoch #90, avg. train loss: 0.00068
+Step #2000, epoch #95, avg. train loss: 0.00070
+Step #2100, epoch #100, avg. train loss: 0.00067
+Step #2200, epoch #104, avg. train loss: 0.00066
+Step #2300, epoch #109, avg. train loss: 0.00070
+Step #2400, epoch #114, avg. train loss: 0.00069
+Step #2500, epoch #119, avg. train loss: 0.00064
+Step #2600, epoch #123, avg. train loss: 0.00066
+Step #2700, epoch #128, avg. train loss: 0.00071
+Step #2800, epoch #133, avg. train loss: 0.00064
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00068
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00068
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00066
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00065
+Step #3800, epoch #180, avg. train loss: 0.00067
+Step #3900, epoch #185, avg. train loss: 0.00064
+Step #4000, epoch #190, avg. train loss: 0.00067
+Step #4100, epoch #195, avg. train loss: 0.00064
+Step #4200, epoch #200, avg. train loss: 0.00065
+Step #4300, epoch #204, avg. train loss: 0.00066
+Step #4400, epoch #209, avg. train loss: 0.00063
+Step #4500, epoch #214, avg. train loss: 0.00066
+Step #4600, epoch #219, avg. train loss: 0.00063
+Step #4700, epoch #223, avg. train loss: 0.00066
+Step #4800, epoch #228, avg. train loss: 0.00063
+Step #4900, epoch #233, avg. train loss: 0.00063
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00065
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00065
+Step #5500, epoch #261, avg. train loss: 0.00065
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00065
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00063
+Step #6000, epoch #285, avg. train loss: 0.00065
+Step #6100, epoch #290, avg. train loss: 0.00064
+Step #6200, epoch #295, avg. train loss: 0.00062
+Step #6300, epoch #300, avg. train loss: 0.00064
+Step #6400, epoch #304, avg. train loss: 0.00065
+Step #6500, epoch #309, avg. train loss: 0.00061
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00065
+Step #6800, epoch #323, avg. train loss: 0.00063
+Step #6900, epoch #328, avg. train loss: 0.00066
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.06(2.71)/0.81(0.11)/0.88(0.88)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.96(4.64)/1.47(0.12)/1.63(1.63)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.14(7.25)/1.68(0.18)/1.79(1.79)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.08(7.31)/2.30(0.12)/2.57(2.57)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [5.82(10.57)/4.17(0.82)/4.85(4.85)]
+Total time elapsed: 6.431 seconds.
+Step #100, epoch #4, avg. train loss: 20.49137
+Step #200, epoch #9, avg. train loss: 9.29356
+Step #300, epoch #14, avg. train loss: 3.87823
+Step #400, epoch #19, avg. train loss: 1.37761
+Step #500, epoch #23, avg. train loss: 0.25316
+Step #600, epoch #28, avg. train loss: 0.00401
+Step #700, epoch #33, avg. train loss: 0.00071
+Step #800, epoch #38, avg. train loss: 0.00071
+Step #900, epoch #42, avg. train loss: 0.00069
+Step #1000, epoch #47, avg. train loss: 0.00073
+Step #1100, epoch #52, avg. train loss: 0.00067
+Step #1200, epoch #57, avg. train loss: 0.00071
+Step #1300, epoch #61, avg. train loss: 0.00071
+Step #1400, epoch #66, avg. train loss: 0.00070
+Step #1500, epoch #71, avg. train loss: 0.00069
+Step #1600, epoch #76, avg. train loss: 0.00067
+Step #1700, epoch #80, avg. train loss: 0.00067
+Step #1800, epoch #85, avg. train loss: 0.00068
+Step #1900, epoch #90, avg. train loss: 0.00065
+Step #2000, epoch #95, avg. train loss: 0.00069
+Step #2100, epoch #100, avg. train loss: 0.00066
+Step #2200, epoch #104, avg. train loss: 0.00067
+Step #2300, epoch #109, avg. train loss: 0.00066
+Step #2400, epoch #114, avg. train loss: 0.00064
+Step #2500, epoch #119, avg. train loss: 0.00069
+Step #2600, epoch #123, avg. train loss: 0.00065
+Step #2700, epoch #128, avg. train loss: 0.00067
+Step #2800, epoch #133, avg. train loss: 0.00061
+Step #2900, epoch #138, avg. train loss: 0.00068
+Step #3000, epoch #142, avg. train loss: 0.00062
+Step #3100, epoch #147, avg. train loss: 0.00066
+Step #3200, epoch #152, avg. train loss: 0.00063
+Step #3300, epoch #157, avg. train loss: 0.00066
+Step #3400, epoch #161, avg. train loss: 0.00062
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00065
+Step #3700, epoch #176, avg. train loss: 0.00064
+Step #3800, epoch #180, avg. train loss: 0.00063
+Step #3900, epoch #185, avg. train loss: 0.00063
+Step #4000, epoch #190, avg. train loss: 0.00064
+Step #4100, epoch #195, avg. train loss: 0.00063
+Step #4200, epoch #200, avg. train loss: 0.00064
+Step #4300, epoch #204, avg. train loss: 0.00062
+Step #4400, epoch #209, avg. train loss: 0.00065
+Step #4500, epoch #214, avg. train loss: 0.00066
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00060
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00062
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00062
+Step #5600, epoch #266, avg. train loss: 0.00064
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00062
+Step #5900, epoch #280, avg. train loss: 0.00063
+Step #6000, epoch #285, avg. train loss: 0.00064
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00065
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00064
+Step #6500, epoch #309, avg. train loss: 0.00063
+Step #6600, epoch #314, avg. train loss: 0.00063
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00065
+Step #6900, epoch #328, avg. train loss: 0.00063
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.80(2.34)/0.62(0.04)/0.66(0.66)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.55(3.39)/1.15(0.11)/1.30(1.30)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.00(6.46)/2.22(0.29)/2.50(2.50)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [4.34(7.11)/3.02(0.75)/3.61(3.61)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [4.91(8.20)/3.44(0.82)/4.09(4.09)]
+Total time elapsed: 5.145 seconds.
+Step #100, epoch #4, avg. train loss: 1.10028
+Step #200, epoch #9, avg. train loss: 0.00877
+Step #300, epoch #14, avg. train loss: 0.00159
+Step #400, epoch #19, avg. train loss: 0.00152
+Step #500, epoch #23, avg. train loss: 0.00147
+Step #600, epoch #28, avg. train loss: 0.00138
+Step #700, epoch #33, avg. train loss: 0.00130
+Step #800, epoch #38, avg. train loss: 0.00128
+Step #900, epoch #42, avg. train loss: 0.00114
+Step #1000, epoch #47, avg. train loss: 0.00109
+Step #1100, epoch #52, avg. train loss: 0.00106
+Step #1200, epoch #57, avg. train loss: 0.00102
+Step #1300, epoch #61, avg. train loss: 0.00099
+Step #1400, epoch #66, avg. train loss: 0.00092
+Step #1500, epoch #71, avg. train loss: 0.00088
+Step #1600, epoch #76, avg. train loss: 0.00089
+Step #1700, epoch #80, avg. train loss: 0.00085
+Step #1800, epoch #85, avg. train loss: 0.00081
+Step #1900, epoch #90, avg. train loss: 0.00078
+Step #2000, epoch #95, avg. train loss: 0.00080
+Step #2100, epoch #100, avg. train loss: 0.00075
+Step #2200, epoch #104, avg. train loss: 0.00074
+Step #2300, epoch #109, avg. train loss: 0.00074
+Step #2400, epoch #114, avg. train loss: 0.00069
+Step #2500, epoch #119, avg. train loss: 0.00069
+Step #2600, epoch #123, avg. train loss: 0.00068
+Step #2700, epoch #128, avg. train loss: 0.00072
+Step #2800, epoch #133, avg. train loss: 0.00066
+Step #2900, epoch #138, avg. train loss: 0.00067
+Step #3000, epoch #142, avg. train loss: 0.00064
+Step #3100, epoch #147, avg. train loss: 0.00067
+Step #3200, epoch #152, avg. train loss: 0.00066
+Step #3300, epoch #157, avg. train loss: 0.00064
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00065
+Step #3600, epoch #171, avg. train loss: 0.00067
+Step #3700, epoch #176, avg. train loss: 0.00062
+Step #3800, epoch #180, avg. train loss: 0.00065
+Step #3900, epoch #185, avg. train loss: 0.00064
+Step #4000, epoch #190, avg. train loss: 0.00064
+Step #4100, epoch #195, avg. train loss: 0.00062
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00064
+Step #4400, epoch #209, avg. train loss: 0.00061
+Step #4500, epoch #214, avg. train loss: 0.00064
+Step #4600, epoch #219, avg. train loss: 0.00061
+Step #4700, epoch #223, avg. train loss: 0.00062
+Step #4800, epoch #228, avg. train loss: 0.00061
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00062
+Step #5100, epoch #242, avg. train loss: 0.00063
+Step #5200, epoch #247, avg. train loss: 0.00060
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00062
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00061
+Step #5700, epoch #271, avg. train loss: 0.00061
+Step #5800, epoch #276, avg. train loss: 0.00063
+Step #5900, epoch #280, avg. train loss: 0.00059
+Step #6000, epoch #285, avg. train loss: 0.00060
+Step #6100, epoch #290, avg. train loss: 0.00065
+Step #6200, epoch #295, avg. train loss: 0.00059
+Step #6300, epoch #300, avg. train loss: 0.00061
+Step #6400, epoch #304, avg. train loss: 0.00061
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00059
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00059
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [2.04(5.62)/1.56(0.07)/1.70(1.70)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [3.26(6.59)/2.36(0.16)/2.72(2.72)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [5.68(10.62)/4.03(0.38)/4.73(4.73)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [7.32(12.97)/5.20(1.05)/6.10(6.10)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [9.00(14.88)/6.64(3.26)/7.50(7.50)]
+Total time elapsed: 5.329 seconds.
+Step #100, epoch #4, avg. train loss: 34.73511
+Step #200, epoch #9, avg. train loss: 15.36086
+Step #300, epoch #14, avg. train loss: 5.88831
+Step #400, epoch #19, avg. train loss: 1.65816
+Step #500, epoch #23, avg. train loss: 0.14158
+Step #600, epoch #28, avg. train loss: 0.00068
+Step #700, epoch #33, avg. train loss: 0.00063
+Step #800, epoch #38, avg. train loss: 0.00069
+Step #900, epoch #42, avg. train loss: 0.00066
+Step #1000, epoch #47, avg. train loss: 0.00065
+Step #1100, epoch #52, avg. train loss: 0.00067
+Step #1200, epoch #57, avg. train loss: 0.00065
+Step #1300, epoch #61, avg. train loss: 0.00066
+Step #1400, epoch #66, avg. train loss: 0.00066
+Step #1500, epoch #71, avg. train loss: 0.00066
+Step #1600, epoch #76, avg. train loss: 0.00064
+Step #1700, epoch #80, avg. train loss: 0.00067
+Step #1800, epoch #85, avg. train loss: 0.00064
+Step #1900, epoch #90, avg. train loss: 0.00070
+Step #2000, epoch #95, avg. train loss: 0.00063
+Step #2100, epoch #100, avg. train loss: 0.00066
+Step #2200, epoch #104, avg. train loss: 0.00065
+Step #2300, epoch #109, avg. train loss: 0.00065
+Step #2400, epoch #114, avg. train loss: 0.00064
+Step #2500, epoch #119, avg. train loss: 0.00067
+Step #2600, epoch #123, avg. train loss: 0.00064
+Step #2700, epoch #128, avg. train loss: 0.00066
+Step #2800, epoch #133, avg. train loss: 0.00064
+Step #2900, epoch #138, avg. train loss: 0.00067
+Step #3000, epoch #142, avg. train loss: 0.00064
+Step #3100, epoch #147, avg. train loss: 0.00066
+Step #3200, epoch #152, avg. train loss: 0.00068
+Step #3300, epoch #157, avg. train loss: 0.00063
+Step #3400, epoch #161, avg. train loss: 0.00064
+Step #3500, epoch #166, avg. train loss: 0.00064
+Step #3600, epoch #171, avg. train loss: 0.00066
+Step #3700, epoch #176, avg. train loss: 0.00065
+Step #3800, epoch #180, avg. train loss: 0.00067
+Step #3900, epoch #185, avg. train loss: 0.00065
+Step #4000, epoch #190, avg. train loss: 0.00064
+Step #4100, epoch #195, avg. train loss: 0.00065
+Step #4200, epoch #200, avg. train loss: 0.00066
+Step #4300, epoch #204, avg. train loss: 0.00066
+Step #4400, epoch #209, avg. train loss: 0.00065
+Step #4500, epoch #214, avg. train loss: 0.00063
+Step #4600, epoch #219, avg. train loss: 0.00065
+Step #4700, epoch #223, avg. train loss: 0.00066
+Step #4800, epoch #228, avg. train loss: 0.00064
+Step #4900, epoch #233, avg. train loss: 0.00066
+Step #5000, epoch #238, avg. train loss: 0.00065
+Step #5100, epoch #242, avg. train loss: 0.00066
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00067
+Step #5400, epoch #257, avg. train loss: 0.00066
+Step #5500, epoch #261, avg. train loss: 0.00064
+Step #5600, epoch #266, avg. train loss: 0.00066
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00064
+Step #5900, epoch #280, avg. train loss: 0.00066
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00070
+Step #6200, epoch #295, avg. train loss: 0.00064
+Step #6300, epoch #300, avg. train loss: 0.00063
+Step #6400, epoch #304, avg. train loss: 0.00065
+Step #6500, epoch #309, avg. train loss: 0.00066
+Step #6600, epoch #314, avg. train loss: 0.00064
+Step #6700, epoch #319, avg. train loss: 0.00063
+Step #6800, epoch #323, avg. train loss: 0.00064
+Step #6900, epoch #328, avg. train loss: 0.00070
+Step #7000, epoch #333, avg. train loss: 0.00062
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.28(3.45)/0.97(0.05)/1.07(1.07)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [2.47(5.33)/1.81(0.10)/2.06(2.06)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [4.31(7.01)/3.01(0.83)/3.59(3.59)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [5.99(8.52)/4.47(3.13)/4.99(4.99)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [6.21(9.60)/4.67(3.01)/5.17(5.17)]
+Total time elapsed: 8.402 seconds.
+Step #100, epoch #4, avg. train loss: 17.96964
+Step #200, epoch #9, avg. train loss: 8.51509
+Step #300, epoch #14, avg. train loss: 3.75523
+Step #400, epoch #19, avg. train loss: 1.38657
+Step #500, epoch #23, avg. train loss: 0.26395
+Step #600, epoch #28, avg. train loss: 0.00566
+Step #700, epoch #33, avg. train loss: 0.00105
+Step #800, epoch #38, avg. train loss: 0.00099
+Step #900, epoch #42, avg. train loss: 0.00100
+Step #1000, epoch #47, avg. train loss: 0.00101
+Step #1100, epoch #52, avg. train loss: 0.00098
+Step #1200, epoch #57, avg. train loss: 0.00098
+Step #1300, epoch #61, avg. train loss: 0.00098
+Step #1400, epoch #66, avg. train loss: 0.00095
+Step #1500, epoch #71, avg. train loss: 0.00095
+Step #1600, epoch #76, avg. train loss: 0.00094
+Step #1700, epoch #80, avg. train loss: 0.00093
+Step #1800, epoch #85, avg. train loss: 0.00090
+Step #1900, epoch #90, avg. train loss: 0.00090
+Step #2000, epoch #95, avg. train loss: 0.00093
+Step #2100, epoch #100, avg. train loss: 0.00087
+Step #2200, epoch #104, avg. train loss: 0.00085
+Step #2300, epoch #109, avg. train loss: 0.00089
+Step #2400, epoch #114, avg. train loss: 0.00088
+Step #2500, epoch #119, avg. train loss: 0.00080
+Step #2600, epoch #123, avg. train loss: 0.00082
+Step #2700, epoch #128, avg. train loss: 0.00085
+Step #2800, epoch #133, avg. train loss: 0.00079
+Step #2900, epoch #138, avg. train loss: 0.00080
+Step #3000, epoch #142, avg. train loss: 0.00080
+Step #3100, epoch #147, avg. train loss: 0.00076
+Step #3200, epoch #152, avg. train loss: 0.00079
+Step #3300, epoch #157, avg. train loss: 0.00075
+Step #3400, epoch #161, avg. train loss: 0.00075
+Step #3500, epoch #166, avg. train loss: 0.00073
+Step #3600, epoch #171, avg. train loss: 0.00074
+Step #3700, epoch #176, avg. train loss: 0.00072
+Step #3800, epoch #180, avg. train loss: 0.00073
+Step #3900, epoch #185, avg. train loss: 0.00069
+Step #4000, epoch #190, avg. train loss: 0.00072
+Step #4100, epoch #195, avg. train loss: 0.00069
+Step #4200, epoch #200, avg. train loss: 0.00069
+Step #4300, epoch #204, avg. train loss: 0.00069
+Step #4400, epoch #209, avg. train loss: 0.00066
+Step #4500, epoch #214, avg. train loss: 0.00069
+Step #4600, epoch #219, avg. train loss: 0.00065
+Step #4700, epoch #223, avg. train loss: 0.00067
+Step #4800, epoch #228, avg. train loss: 0.00065
+Step #4900, epoch #233, avg. train loss: 0.00064
+Step #5000, epoch #238, avg. train loss: 0.00064
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00065
+Step #5300, epoch #252, avg. train loss: 0.00063
+Step #5400, epoch #257, avg. train loss: 0.00064
+Step #5500, epoch #261, avg. train loss: 0.00063
+Step #5600, epoch #266, avg. train loss: 0.00062
+Step #5700, epoch #271, avg. train loss: 0.00064
+Step #5800, epoch #276, avg. train loss: 0.00060
+Step #5900, epoch #280, avg. train loss: 0.00061
+Step #6000, epoch #285, avg. train loss: 0.00063
+Step #6100, epoch #290, avg. train loss: 0.00062
+Step #6200, epoch #295, avg. train loss: 0.00060
+Step #6300, epoch #300, avg. train loss: 0.00062
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00058
+Step #6600, epoch #314, avg. train loss: 0.00060
+Step #6700, epoch #319, avg. train loss: 0.00062
+Step #6800, epoch #323, avg. train loss: 0.00060
+Step #6900, epoch #328, avg. train loss: 0.00063
+Step #7000, epoch #333, avg. train loss: 0.00059
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [1.31(3.42)/1.00(0.07)/1.09(1.09)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.99(5.24)/1.52(0.16)/1.66(1.66)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [3.00(7.24)/2.29(0.54)/2.50(2.50)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [2.32(8.04)/1.82(0.10)/1.93(1.93)]
+Gen. 40 (100.00%):/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:324: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/data.py:359: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and will raise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  warnings.warn(DEPRECATION_MSG_1D, DeprecationWarning)
+ Max/Min/Avg Fitness(Raw) [3.40(8.73)/2.58(0.18)/2.83(2.83)]
+Total time elapsed: 6.315 seconds.
+Step #100, epoch #4, avg. train loss: 1.51626
+Step #200, epoch #9, avg. train loss: 0.02761
+Step #300, epoch #14, avg. train loss: 0.00114
+Step #400, epoch #19, avg. train loss: 0.00115
+Step #500, epoch #23, avg. train loss: 0.00108
+Step #600, epoch #28, avg. train loss: 0.00098
+Step #700, epoch #33, avg. train loss: 0.00093
+Step #800, epoch #38, avg. train loss: 0.00086
+Step #900, epoch #42, avg. train loss: 0.00080
+Step #1000, epoch #47, avg. train loss: 0.00078
+Step #1100, epoch #52, avg. train loss: 0.00071
+Step #1200, epoch #57, avg. train loss: 0.00071
+Step #1300, epoch #61, avg. train loss: 0.00071
+Step #1400, epoch #66, avg. train loss: 0.00068
+Step #1500, epoch #71, avg. train loss: 0.00067
+Step #1600, epoch #76, avg. train loss: 0.00065
+Step #1700, epoch #80, avg. train loss: 0.00065
+Step #1800, epoch #85, avg. train loss: 0.00065
+Step #1900, epoch #90, avg. train loss: 0.00062
+Step #2000, epoch #95, avg. train loss: 0.00067
+Step #2100, epoch #100, avg. train loss: 0.00064
+Step #2200, epoch #104, avg. train loss: 0.00064
+Step #2300, epoch #109, avg. train loss: 0.00064
+Step #2400, epoch #114, avg. train loss: 0.00061
+Step #2500, epoch #119, avg. train loss: 0.00066
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00064
+Step #2800, epoch #133, avg. train loss: 0.00059
+Step #2900, epoch #138, avg. train loss: 0.00066
+Step #3000, epoch #142, avg. train loss: 0.00060
+Step #3100, epoch #147, avg. train loss: 0.00064
+Step #3200, epoch #152, avg. train loss: 0.00062
+Step #3300, epoch #157, avg. train loss: 0.00065
+Step #3400, epoch #161, avg. train loss: 0.00061
+Step #3500, epoch #166, avg. train loss: 0.00064
+Step #3600, epoch #171, avg. train loss: 0.00064
+Step #3700, epoch #176, avg. train loss: 0.00063
+Step #3800, epoch #180, avg. train loss: 0.00062
+Step #3900, epoch #185, avg. train loss: 0.00062
+Step #4000, epoch #190, avg. train loss: 0.00063
+Step #4100, epoch #195, avg. train loss: 0.00062
+Step #4200, epoch #200, avg. train loss: 0.00063
+Step #4300, epoch #204, avg. train loss: 0.00061
+Step #4400, epoch #209, avg. train loss: 0.00064
+Step #4500, epoch #214, avg. train loss: 0.00065
+Step #4600, epoch #219, avg. train loss: 0.00060
+Step #4700, epoch #223, avg. train loss: 0.00059
+Step #4800, epoch #228, avg. train loss: 0.00063
+Step #4900, epoch #233, avg. train loss: 0.00065
+Step #5000, epoch #238, avg. train loss: 0.00063
+Step #5100, epoch #242, avg. train loss: 0.00062
+Step #5200, epoch #247, avg. train loss: 0.00061
+Step #5300, epoch #252, avg. train loss: 0.00061
+Step #5400, epoch #257, avg. train loss: 0.00063
+Step #5500, epoch #261, avg. train loss: 0.00060
+Step #5600, epoch #266, avg. train loss: 0.00062
+Step #5700, epoch #271, avg. train loss: 0.00062
+Step #5800, epoch #276, avg. train loss: 0.00060
+Step #5900, epoch #280, avg. train loss: 0.00061
+Step #6000, epoch #285, avg. train loss: 0.00062
+Step #6100, epoch #290, avg. train loss: 0.00063
+Step #6200, epoch #295, avg. train loss: 0.00062
+Step #6300, epoch #300, avg. train loss: 0.00060
+Step #6400, epoch #304, avg. train loss: 0.00062
+Step #6500, epoch #309, avg. train loss: 0.00062
+Step #6600, epoch #314, avg. train loss: 0.00061
+Step #6700, epoch #319, avg. train loss: 0.00061
+Step #6800, epoch #323, avg. train loss: 0.00062
+Step #6900, epoch #328, avg. train loss: 0.00060
+Step #7000, epoch #333, avg. train loss: 0.00060
+New loop
+Initialization
+Initilization
+Gen. 0 (0.00%): Max/Min/Avg Fitness(Raw) [0.97(3.21)/0.76(0.05)/0.81(0.81)]
+Gen. 10 (25.00%): Max/Min/Avg Fitness(Raw) [1.56(4.35)/1.20(0.12)/1.30(1.30)]
+Gen. 20 (50.00%): Max/Min/Avg Fitness(Raw) [2.60(5.92)/1.93(0.15)/2.16(2.16)]
+Gen. 30 (75.00%): Max/Min/Avg Fitness(Raw) [3.27(7.73)/2.46(0.28)/2.73(2.73)]
+Gen. 40 (100.00%): Max/Min/Avg Fitness(Raw) [5.70(7.87)/3.61(1.02)/4.75(4.75)]
+Total time elapsed: 12.084 seconds.
+Step #100, epoch #4, avg. train loss: 0.92952
+Step #200, epoch #9, avg. train loss: 0.00680
+Step #300, epoch #14, avg. train loss: 0.00137
+Step #400, epoch #19, avg. train loss: 0.00135
+Step #500, epoch #23, avg. train loss: 0.00128
+Step #600, epoch #28, avg. train loss: 0.00120
+Step #700, epoch #33, avg. train loss: 0.00117
+Step #800, epoch #38, avg. train loss: 0.00111
+Step #900, epoch #42, avg. train loss: 0.00104
+Step #1000, epoch #47, avg. train loss: 0.00100
+Step #1100, epoch #52, avg. train loss: 0.00096
+Step #1200, epoch #57, avg. train loss: 0.00091
+Step #1300, epoch #61, avg. train loss: 0.00090
+Step #1400, epoch #66, avg. train loss: 0.00086
+Step #1500, epoch #71, avg. train loss: 0.00082
+Step #1600, epoch #76, avg. train loss: 0.00081
+Step #1700, epoch #80, avg. train loss: 0.00078
+Step #1800, epoch #85, avg. train loss: 0.00073
+Step #1900, epoch #90, avg. train loss: 0.00075
+Step #2000, epoch #95, avg. train loss: 0.00072
+Step #2100, epoch #100, avg. train loss: 0.00070
+Step #2200, epoch #104, avg. train loss: 0.00068
+Step #2300, epoch #109, avg. train loss: 0.00070
+Step #2400, epoch #114, avg. train loss: 0.00065
+Step #2500, epoch #119, avg. train loss: 0.00063
+Step #2600, epoch #123, avg. train loss: 0.00063
+Step #2700, epoch #128, avg. train loss: 0.00065
+Step #2800, epoch #133, avg. train loss: 0.00060
+Step #2900, epoch #138, avg. train loss: 0.00062
+Step #3000, epoch #142, avg. train loss: 0.00060
+Step #3100, epoch #147, avg. train loss: 0.00062
+Step #3200, epoch #152, avg. train loss: 0.00061
+Step #3300, epoch #157, avg. train loss: 0.00060
+Step #3400, epoch #161, avg. train loss: 0.00059
+Step #3500, epoch #166, avg. train loss: 0.00061
+Step #3600, epoch #171, avg. train loss: 0.00062
+Step #3700, epoch #176, avg. train loss: 0.00058
+Step #3800, epoch #180, avg. train loss: 0.00060
+Step #3900, epoch #185, avg. train loss: 0.00060
+Step #4000, epoch #190, avg. train loss: 0.00060
+Step #4100, epoch #195, avg. train loss: 0.00058
+Step #4200, epoch #200, avg. train loss: 0.00059
+Step #4300, epoch #204, avg. train loss: 0.00060
+Step #4400, epoch #209, avg. train loss: 0.00057
+Step #4500, epoch #214, avg. train loss: 0.00061
+Step #4600, epoch #219, avg. train loss: 0.00057
+Step #4700, epoch #223, avg. train loss: 0.00058
+Step #4800, epoch #228, avg. train loss: 0.00057
+Step #4900, epoch #233, avg. train loss: 0.00061
+Step #5000, epoch #238, avg. train loss: 0.00058
+Step #5100, epoch #242, avg. train loss: 0.00060
+Step #5200, epoch #247, avg. train loss: 0.00057
+Step #5300, epoch #252, avg. train loss: 0.00058
+Step #5400, epoch #257, avg. train loss: 0.00059
+Step #5500, epoch #261, avg. train loss: 0.00060
+Step #5600, epoch #266, avg. train loss: 0.00057
+Step #5700, epoch #271, avg. train loss: 0.00058
+Step #5800, epoch #276, avg. train loss: 0.00060
+Step #5900, epoch #280, avg. train loss: 0.00056
+Step #6000, epoch #285, avg. train loss: 0.00057
+Step #6100, epoch #290, avg. train loss: 0.00061
+Step #6200, epoch #295, avg. train loss: 0.00056
+Step #6300, epoch #300, avg. train loss: 0.00058
+Step #6400, epoch #304, avg. train loss: 0.00058
+Step #6500, epoch #309, avg. train loss: 0.00059
+Step #6600, epoch #314, avg. train loss: 0.00056
+Step #6700, epoch #319, avg. train loss: 0.00058
+Step #6800, epoch #323, avg. train loss: 0.00058
+Step #6900, epoch #328, avg. train loss: 0.00056
+Step #7000, epoch #333, avg. train loss: 0.00059
